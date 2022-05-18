@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
-  <Params Value=" -MDelphi -Scagi -Ci -O2 -l -vewnhibq -FiJ:\lazarus\unidac8.4.2\Source -FiJ:\lazarus\unidac8.4.2\Lib\Lazarus1\x86_64-win64 -FiJ:\lazarus -FiJ:\Common\Source -FoJ:\lazarus\unidac8.4.2\Source -FoJ:\lazarus\unidac8.4.2\Lib\Lazarus1\x86_64-win64 -FuJ:\lazarus\unidac8.4.2\Source -FuJ:\lazarus\unidac8.4.2\Lib\Lazarus1\x86_64-win64 -FuJ:\lazarus -FuJ:\Common\Source -FuJ:\lazarus\unidac8.4.2 -FuJ:\lazarus\unidac8.4.2\Source\UniProviders\MySQL -FuC:\lazarus\packager\units\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\components\freetype\lib\x86_64-win64 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuJ:\lazarus\unidac8.4.2\Source\Lazarus1\ -FUJ:\lazarus\unidac8.4.2\Lib\Lazarus1\x86_64-win64\ -dLCL -dLCLwin32 -dUNIDACPRO myprovider10.pas"/>
-</CONFIG>

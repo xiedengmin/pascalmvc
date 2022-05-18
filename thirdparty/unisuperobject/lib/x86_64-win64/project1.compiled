@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="E:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -gw3 -gl -WG -l -vewnhibq -FiE:\source\delphisource\pascalmvc\thirdparty\unisuperobject\lib\x86_64-win64 -FuE:\lazarus\lcl\units\x86_64-win64\win32 -FuE:\lazarus\lcl\units\x86_64-win64 -FuE:\lazarus\components\freetype\lib\x86_64-win64 -FuE:\lazarus\components\lazutils\lib\x86_64-win64 -FuE:\lazarus\packager\units\x86_64-win64 -FuE:\source\delphisource\pascalmvc\thirdparty\unisuperobject\ -FUE:\source\delphisource\pascalmvc\thirdparty\unisuperobject\lib\x86_64-win64\ -FEE:\source\delphisource\pascalmvc\thirdparty\unisuperobject\ -oE:\source\delphisource\pascalmvc\thirdparty\unisuperobject\project1.exe -dLCL -dLCLwin32 project1.lpr"/>
-</CONFIG>

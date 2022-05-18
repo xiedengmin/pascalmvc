@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="E:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
-  <Params Value=" -Mdelphi -Scghi -O1 -gw2 -godwarfsets -gl -WG -l -vewnhibq -FiE:\source\delphisource\pascalmvc\thirdparty\superobject -FuE:\source\delphisource\pascalmvc\thirdparty\superobject -FuE:\lazarus\lcl\units\x86_64-win64\win32 -FuE:\lazarus\lcl\units\x86_64-win64 -FuE:\lazarus\components\freetype\lib\x86_64-win64 -FuE:\lazarus\components\lazutils\lib\x86_64-win64 -FuE:\lazarus\packager\units\x86_64-win64 -FuE:\source\delphisource\pascalmvc\thirdparty\superobject\tests\ -FEE:\source\delphisource\pascalmvc\thirdparty\superobject\tests\lib\x86_64-win64\ -oE:\source\delphisource\pascalmvc\thirdparty\superobject\tests\lib\x86_64-win64\test_format.exe -dLCL -dLCLwin32 -dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL test_format.dpr"/>
-  <Complete Value="False"/>
-</CONFIG>

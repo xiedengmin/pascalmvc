@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
-  <Params Value=" -MDelphi -Scagi -Ci -O2 -l -vewnhibq -FiJ:\lazarus\unidac8.4.2\Source -FiJ:\lazarus\unidac8.4.2\Lib\Lazarus1\x86_64-win64 -FiJ:\lazarus\Common\Source -FoJ:\lazarus\unidac8.4.2\Source -FoJ:\lazarus\unidac8.4.2\Lib\Lazarus1\x86_64-win64 -FuJ:\lazarus\unidac8.4.2\Source -FuJ:\lazarus\unidac8.4.2\Lib\Lazarus1\x86_64-win64 -FuJ:\lazarus\Common\Source -FuC:\lazarus\packager\units\x86_64-win64 -FuJ:\lazarus\unidac8.4.2\Source\Lazarus1\ -FUJ:\lazarus\unidac8.4.2\Lib\Lazarus1\x86_64-win64\ unidac10.pas"/>
-</CONFIG>

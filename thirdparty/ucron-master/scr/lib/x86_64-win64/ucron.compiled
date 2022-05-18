@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="E:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -Xg -l -vewnhibq -FiF:\download\ucron-master\scr\lib\x86_64-win64 -FuE:\lazarus\lcl\units\x86_64-win64\win32 -FuE:\lazarus\lcl\units\x86_64-win64 -FuE:\lazarus\components\freetype\lib\x86_64-win64 -FuE:\lazarus\components\lazutils\lib\x86_64-win64 -FuE:\lazarus\packager\units\x86_64-win64 -FuF:\download\ucron-master\scr\ -FUF:\download\ucron-master\scr\lib\x86_64-win64\ -FEF:\download\ucron-master\scr\ -oF:\download\ucron-master\scr\ucron.exe -dLCL -dLCLwin32 ucron.dpr"/>
-</CONFIG>
