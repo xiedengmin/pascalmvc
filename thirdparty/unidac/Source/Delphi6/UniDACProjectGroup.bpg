@@ -1,0 +1,130 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = dac60.bpl dacvcl60.bpl dcldac60.bpl unidac60.bpl unidacvcl60.bpl \
+  dclunidac60.bpl oraprovider60.bpl tdsprovider60.bpl msprovider60.bpl \
+  myprovider60.bpl ibprovider60.bpl pgprovider60.bpl liteprovider60.bpl \
+  odbcprovider60.bpl accessprovider60.bpl adsprovider60.bpl aseprovider60.bpl \
+  mongoprovider60.bpl db2provider60.bpl vquery60.bpl dbfprovider60.bpl \
+  vquery60.bpl dbfprovider60.bpl bigcommerceprovider60.bpl \
+  dynamicsprovider60.bpl exacttargetprovider60.bpl freshbooksprovider60.bpl \
+  magentoprovider60.bpl  mailchimpprovider60.bpl netsuiteprovider60.bpl \
+  quickbooksprovider60.bpl salesforceprovider60.bpl sugarprovider60.bpl \
+  zohoprovider60.bpl dclvquery60.bpl crcontrols60.bpl dclcrcontrols60.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+dac60.bpl: dac60.dpk
+  $(DCC)
+
+dacvcl60.bpl: dacvcl60.dpk
+  $(DCC)
+
+dcldac60.bpl: dcldac60.dpk
+  $(DCC)
+
+unidac60.bpl: unidac60.dpk
+  $(DCC)
+
+unidacvcl60.bpl: unidacvcl60.dpk
+  $(DCC)
+
+dclunidac60.bpl: dclunidac60.dpk
+  $(DCC)
+
+oraprovider60.bpl: oraprovider60.dpk
+  $(DCC)
+
+tdsprovider60.bpl: tdsprovider60.dpk
+  $(DCC)
+
+msprovider60.bpl: msprovider60.dpk
+  $(DCC)
+
+myprovider60.bpl: myprovider60.dpk
+  $(DCC)
+
+ibprovider60.bpl: ibprovider60.dpk
+  $(DCC)
+
+pgprovider60.bpl: pgprovider60.dpk
+  $(DCC)
+
+liteprovider60.bpl: liteprovider60.dpk
+  $(DCC)
+
+odbcprovider60.bpl: odbcprovider60.dpk
+  $(DCC)
+
+accessprovider60.bpl: accessprovider60.dpk
+  $(DCC)
+
+adsprovider60.bpl: adsprovider60.dpk
+  $(DCC)
+
+aseprovider60.bpl: aseprovider60.dpk
+  $(DCC)
+
+mongoprovider60.bpl: mongoprovider60.dpk
+  $(DCC)
+
+db2provider60.bpl: db2provider60.dpk
+  $(DCC)
+
+vquery60.bpl: vquery60.dpk
+  $(DCC)
+
+dbfprovider60.bpl: dbfprovider60.dpk
+  $(DCC)
+
+bigcommerceprovider60.bpl: bigcommerceprovider60.dpk
+  $(DCC)
+
+dynamicsprovider60.bpl: dynamicsprovider60.dpk
+  $(DCC)
+
+exacttargetprovider60.bpl: exacttargetprovider60.dpk
+  $(DCC)
+
+freshbooksprovider60.bpl: freshbooksprovider60.dpk
+  $(DCC)
+
+magentoprovider60.bpl: magentoprovider60.dpk
+  $(DCC)
+
+mailchimpprovider60.bpl: mailchimpprovider60.dpk
+  $(DCC)
+
+netsuiteprovider60.bpl: netsuiteprovider60.dpk
+  $(DCC)
+
+quickbooksprovider60.bpl: quickbooksprovider60.dpk
+  $(DCC)
+
+salesforceprovider60.bpl: salesforceprovider60.dpk
+  $(DCC)
+
+sugarprovider60.bpl: sugarprovider60.dpk
+  $(DCC)
+
+zohoprovider60.bpl: zohoprovider60.dpk
+  $(DCC)
+
+dclvquery60.bpl: dclvquery60.dpk
+  $(DCC)
+
+crcontrols60.bpl: crcontrols60.dpk
+  $(DCC)
+
+dclcrcontrols60.bpl: dclcrcontrols60.dpk
+  $(DCC)
+
+

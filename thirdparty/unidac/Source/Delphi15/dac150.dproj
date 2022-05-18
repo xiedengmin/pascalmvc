@@ -1,0 +1,169 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{3e934519-3666-4902-aa40-eb29eed797ea}</ProjectGuid>
+		<MainSource>dac150.dpk</MainSource>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		<DCC_DependencyCheckOutputName>dac150.bpl</DCC_DependencyCheckOutputName>
+		<ProjectVersion>12.3</ProjectVersion>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+		<Base>True</Base>
+		<Platform>Win32</Platform>
+		<AppType>Package</AppType>
+		<FrameworkType>None</FrameworkType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_Release)'!=''">
+		<Cfg_Release>true</Cfg_Release>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_Debug)'!=''">
+		<Cfg_Debug>true</Cfg_Debug>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<DCC_DcuOutput>..\..\Lib\Delphi15</DCC_DcuOutput>
+		<DCC_DcpOutput>..\..\Lib\Delphi15</DCC_DcpOutput>
+		<DCC_HppOutput>..\..\Include\Delphi15</DCC_HppOutput>
+		<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+		<DCC_UnitSearchPath>..;..\..\Lib\Delphi15;$(BDSCOMMONDIR)\Dcp\$(Platform);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+		<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+		<DCC_DependencyCheckOutputName>dac150.bpl</DCC_DependencyCheckOutputName>
+		<DCC_ImageBase>00400000</DCC_ImageBase>
+		<DCC_Description>Devart Data Access Components</DCC_Description>
+		<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+		<GenPackage>true</GenPackage>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+		<DCC_DependencyCheckOutputName>dac150.bpl</DCC_DependencyCheckOutputName>
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_Define>RELEASE</DCC_Define>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+		<DCC_DependencyCheckOutputName>dac150.bpl</DCC_DependencyCheckOutputName>
+		<Version>7.0</Version>
+		<DCC_Define>DEBUG</DCC_Define>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="dac150.dpk">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="dbrtl.dcp"/>
+		<DCCReference Include="..\CRTypes.pas"/>
+		<DCCReference Include="..\CRProps.pas"/>
+		<DCCReference Include="..\CRAccess.pas"/>
+		<DCCReference Include="..\DALoader.pas"/>
+		<DCCReference Include="..\DAAlerter.pas"/>
+		<DCCReference Include="..\DADump.pas"/>
+		<DCCReference Include="..\DAScript.pas"/>
+		<DCCReference Include="..\CRParser.pas"/>
+		<DCCReference Include="..\CRServerEnumerator.pas"/>
+		<DCCReference Include="..\DAConsts.pas"/>
+		<DCCReference Include="..\DBMonitorMessages.pas"/>
+		<DCCReference Include="..\DBMonitorClient.pas"/>
+		<DCCReference Include="..\DASQLMonitor.pas"/>
+		<DCCReference Include="..\DBAccess.pas"/>
+		<DCCReference Include="..\MemData.pas"/>
+		<DCCReference Include="..\MemDS.pas"/>
+		<DCCReference Include="..\VirtualTable.pas"/>
+		<DCCReference Include="..\VirtualDataSet.pas"/>
+		<DCCReference Include="..\CLRClasses.pas"/>
+		<DCCReference Include="..\MemUtils.pas"/>
+		<DCCReference Include="..\CRBatchMove.pas"/>
+		<DCCReference Include="..\CRTimer.pas"/>
+		<DCCReference Include="..\CRThread.pas"/>
+		<DCCReference Include="..\CRConnectionPool.pas"/>
+		<DCCReference Include="..\CRXml.pas"/>
+		<DCCReference Include="..\CRVio.pas"/>
+		<DCCReference Include="..\CRVioSocket.pas"/>
+		<DCCReference Include="..\CRVioTcp.pas"/>
+		<DCCReference Include="..\CRVioUdp.pas"/>
+		<DCCReference Include="..\CRSecureConnection.pas"/>
+		<DCCReference Include="..\CRBase64.pas"/>
+		<DCCReference Include="..\CRBigInteger.pas"/>
+		<DCCReference Include="..\CRNumeric.pas"/>
+		<DCCReference Include="..\CRTimeStamp.pas"/>
+		<DCCReference Include="..\CRDataBuffer.pas"/>
+		<DCCReference Include="..\CRHttp.pas"/>
+		<DCCReference Include="..\CRVioHttp.pas"/>
+		<DCCReference Include="..\CRVioTcpSSL.pas"/>
+		<DCCReference Include="..\CRCipher.pas"/>
+		<DCCReference Include="..\CRCryptoTransformIntf.pas"/>
+		<DCCReference Include="..\CRDECUtil.pas"/>
+		<DCCReference Include="..\CREncryption.pas"/>
+		<DCCReference Include="..\CRHash.pas"/>
+		<DCCReference Include="..\CRHashAlgorithm.pas"/>
+		<DCCReference Include="..\CRHMAC.pas"/>
+		<DCCReference Include="..\CRRNG.pas"/>
+		<DCCReference Include="..\CRSymmetricAlgorithm.pas"/>
+		<DCCReference Include="..\CRConnectionString.pas"/>
+		<DCCReference Include="..\CRSspi.pas"/>
+		<DCCReference Include="..\MTSCall.pas"/>
+		<DCCReference Include="..\DASQLGenerator.pas"/>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_Release</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_Debug</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+	<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject>
+			<Delphi.Personality>
+				<Parameters/>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Type="Integer" Name="MajorVer">11</VersionInfo>
+					<VersionInfo Type="Integer" Name="MinorVer">4</VersionInfo>
+					<VersionInfo Type="Integer" Name="Release">2</VersionInfo>
+					<VersionInfo Type="Integer" Name="Build">0</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Type="String" Name="FileVersion">11.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName">DAC</VersionInfoKeys>
+					<VersionInfoKeys Type="String" Name="ProductVersion">11.4.2.0</VersionInfoKeys>
+				</VersionInfoKeys>
+				<Source>
+					<Source Name="MainSource">dac150.dpk</Source>
+				</Source>
+			</Delphi.Personality>
+			<Platforms>
+				<Platform value="Win32">True</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+</Project>

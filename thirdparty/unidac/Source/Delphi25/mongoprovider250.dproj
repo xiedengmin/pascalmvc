@@ -1,0 +1,187 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{e186d48f-d196-45b3-bf3f-f0dfc4bfabba}</ProjectGuid>
+		<MainSource>mongoprovider250.dpk</MainSource>
+		<DCC_DependencyCheckOutputName>mongoprovider250.bpl</DCC_DependencyCheckOutputName>
+		<ProjectVersion>18.2</ProjectVersion>
+		<FrameworkType>None</FrameworkType>
+		<Base>True</Base>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+		<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		<TargetedPlatforms>1247</TargetedPlatforms>
+		<AppType>Package</AppType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+		<Cfg_1>true</Cfg_1>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+		<Cfg_2>true</Cfg_2>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<SanitizedProjectName>mongoprovider250</SanitizedProjectName>
+		<DCC_DcuOutput>..\..\Lib\Delphi25\$(Platform)</DCC_DcuOutput>
+		<DCC_HppOutput>..\..\Include\Delphi25\$(Platform)</DCC_HppOutput>
+		<DCC_UnitSearchPath>..\;..\..\;..\UniProviders\MongoDB;..\..\Lib\Delphi25\$(Platform);$(BDSCOMMONDIR)\Dcp\$(Platform);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+		<DCC_DependencyCheckOutputName>mongoprovider250.bpl</DCC_DependencyCheckOutputName>
+		<DCC_UsePackage>rtl;dac250;unidac250;$(DCC_UsePackage)</DCC_UsePackage>
+		<VerInfo_Keys>CompanyName=Devart;FileDescription=;FileVersion=8.4.2.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=UniDac;ProductVersion=8.4.2.0;Comments=</VerInfo_Keys>
+		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+		<VerInfo_MinorVer>4</VerInfo_MinorVer>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_Build>0</VerInfo_Build>
+		<VerInfo_Release>2</VerInfo_Release>
+		<VerInfo_MajorVer>8</VerInfo_MajorVer>
+		<DCC_Description>UniDAC MongoDB Provider</DCC_Description>
+		<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+		<DCC_Define>UNIDACPRO;$(DCC_Define)</DCC_Define>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+		<GenPackage>true</GenPackage>
+		<DCC_DebugInformation>0</DCC_DebugInformation>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>0</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_UnitAlias>WinTypes=Borland.Vcl.Windows;WinProcs=Borland.Vcl.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;</DCC_UnitAlias>
+		<DCC_StackSize>4096,1048576</DCC_StackSize>
+		<DCC_ExeOutput>.</DCC_ExeOutput>
+		<DCC_ObjOutput>.</DCC_ObjOutput>
+		<DCC_Define>UNIDACPRO;RELEASE</DCC_Define>
+		<DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+		<DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+		<DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+		<DCC_DependencyCheckOutputName>mongoprovider250.bpl</DCC_DependencyCheckOutputName>
+		<Version>7.0</Version>
+		<DCC_DebugInformation>0</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_ObjOutput>.</DCC_ObjOutput>
+		<DCC_Define>UNIDACPRO;DEBUG</DCC_Define>
+		<DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+		<DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+		<DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug_Android)'!=''">
+		<BT_BuildType>Debug</BT_BuildType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug_iOSDevice32)'!=''">
+		<BT_BuildType>Debug</BT_BuildType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug_iOSDevice64)'!=''">
+		<BT_BuildType>Debug</BT_BuildType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug_OSX32)'!=''">
+		<BT_BuildType>Debug</BT_BuildType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug_Win32)'!=''">
+		<VerInfo_Locale>1049</VerInfo_Locale>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="$(MainSource)">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="dac250.dcp"/>
+		<DCCReference Include="vquery250.dcp"/>
+		<DCCReference Include="unidac250.dcp"/>
+		<DCCReference Include="..\..\MongoDBUniProvider.pas"/>
+		<DCCReference Include="..\..\Uni\MongoClassesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoDataTypeMapUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoObjectsUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoConnectionStringUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoPropsUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoServicesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoSQLGeneratorUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoCallUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoConstsUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoErrorUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoConnectionPoolUni.pas"/>
+		<DCCReference Include="..\..\Uni\MongoJsonUni.pas"/>
+		<DCCReference Include="..\..\..\..\..\Common\Source\CRJson.pas"/>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_Debug</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_Release</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject>
+			<Delphi.Personality>
+				<Parameters/>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Name="MajorVer">8</VersionInfo>
+					<VersionInfo Name="MinorVer">4</VersionInfo>
+					<VersionInfo Name="Release">2</VersionInfo>
+					<VersionInfo Name="Build">0</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Name="FileVersion">8.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName">UniDac</VersionInfoKeys>
+					<VersionInfoKeys Name="ProductVersion">8.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="Comments"/>
+				</VersionInfoKeys>
+				<Source>
+					<Source Name="MainSource">mongoprovider250.dpk</Source>
+				</Source>
+				<Excluded_Packages>
+					<Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dcllitedac250.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dcllitedac250.bpl not found</Excluded_Packages>
+					<Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\litedacvcl250.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\litedacvcl250.bpl not found</Excluded_Packages>
+					<Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dcllitedacfmx250.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dcllitedacfmx250.bpl not found</Excluded_Packages>
+					<Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\litedacfmx250.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\litedacfmx250.bpl not found</Excluded_Packages>
+					<Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dclodac250.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dclodac250.bpl not found</Excluded_Packages>
+					<Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\odacvcl250.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\odacvcl250.bpl not found</Excluded_Packages>
+					<Excluded_Packages Name="$(BDSBIN)\bcboffice2k250.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+					<Excluded_Packages Name="$(BDSBIN)\bcbofficexp250.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+					<Excluded_Packages Name="$(BDSBIN)\dcloffice2k250.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+					<Excluded_Packages Name="$(BDSBIN)\dclofficexp250.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					<Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dclodacfmx250.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\dclodacfmx250.bpl not found</Excluded_Packages>
+					<Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\odacfmx250.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\18.0\Bpl\odacfmx250.bpl not found</Excluded_Packages>
+				</Excluded_Packages>
+			</Delphi.Personality>
+			<Platforms>
+				<Platform value="Linux64">True</Platform>
+				<Platform value="OSX32">True</Platform>
+				<Platform value="Win32">True</Platform>
+				<Platform value="Win64">True</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+	<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+</Project>

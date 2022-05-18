@@ -1,0 +1,46 @@
+package exacttargetprovider250;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IFNDEF POSIX}
+{$IMAGEBASE $400000}
+{$ENDIF}
+{$DESCRIPTION 'UniDAC Salesforce MC Provider'}
+{$IMPLICITBUILD OFF}
+{$DEFINE UNIDACPRO}
+
+requires
+  rtl,
+  dac250,
+  unidac250,
+  odbcprovider250;
+
+contains
+  ExactTargetClassesUni in '..\UniProviders\SalesforceMC\ExactTargetClassesUni.pas',
+  ExactTargetConnectionPoolUni in '..\UniProviders\SalesforceMC\ExactTargetConnectionPoolUni.pas',
+  ExactTargetConnectionStringUni in '..\UniProviders\SalesforceMC\ExactTargetConnectionStringUni.pas',
+  ExactTargetConstsUni in '..\UniProviders\SalesforceMC\ExactTargetConstsUni.pas',
+  ExactTargetPropsUni in '..\UniProviders\SalesforceMC\ExactTargetPropsUni.pas',
+  SalesforceMCUniProvider in '..\UniProviders\SalesforceMC\SalesforceMCUniProvider.pas';
+
+end.
+

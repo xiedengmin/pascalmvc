@@ -1,0 +1,85 @@
+package dcldac270;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Devart Data Access Components'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  dac270,
+  dcldb,
+  dacvcl270,
+  vcl,
+  dbrtl,
+  vcldb,
+  vclactnband;
+
+contains
+  DacReg in '..\Design\DacReg.pas',
+  CRCtrls in '..\Design\CRCtrls.pas',
+  CRFrame in '..\Design\CRFrame.pas',
+  CRColFrame in '..\Design\CRColFrame.pas',
+  CREditor in '..\Design\CREditor.pas',
+  CRTabEditor in '..\Design\CRTabEditor.pas',
+  CRDataEditor in '..\Design\CRDataEditor.pas',
+  DAMenu in '..\Design\DAMenu.pas',
+  Download in '..\Design\Download.pas',
+  DAConnectionEditor in '..\Design\DAConnectionEditor.pas',
+  DATableEditor in '..\Design\DATableEditor.pas',
+  DAStoredProcEditor in '..\Design\DAStoredProcEditor.pas',
+  DAScriptEditor in '..\Design\DAScriptEditor.pas',
+  DADumpEditor in '..\Design\DADumpEditor.pas',
+  DADumpProgress in '..\Design\DADumpProgress.pas',
+  DADualListEditor in '..\Design\DADualListEditor.pas',
+  DAMacrosFrame in '..\Design\DAMacrosFrame.pas',
+  DASQLComponentEditor in '..\Design\DASQLComponentEditor.pas',
+  DASPCallFrame in '..\Design\DASPCallFrame.pas',
+  DAUpdateSQLFrame in '..\Design\DAUpdateSQLFrame.pas',
+  DAUpdateSQLEditor in '..\Design\DAUpdateSQLEditor.pas',
+  DASQLGeneratorFrame in '..\Design\DASQLGeneratorFrame.pas',
+  DAQueryEditor in '..\Design\DAQueryEditor.pas',
+  DADataEditor in '..\Design\DADataEditor.pas',
+  DAParamsFrame in '..\Design\DAParamsFrame.pas',
+  DASQLFrame in '..\Design\DASQLFrame.pas',
+  DAParamValueEditor in '..\Design\DAParamValueEditor.pas',
+  DATableSQLFrame in '..\Design\DATableSQLFrame.pas',
+  DAEditor in '..\Design\DAEditor.pas',
+  DADataTypeMapFrame in '..\Design\DADataTypeMapFrame.pas',
+  HelpUtils in '..\Design\HelpUtils.pas',
+  VTDataEditor in '..\Design\VTDataEditor.pas',
+  VTDesign in '..\Design\VTDesign.pas',
+  DBToolsClient in '..\Design\DBToolsClient.pas',
+  DBToolsIntf in '..\Design\DBToolsIntf.pas',
+  DBToolsClientImp in '..\Design\DBToolsClientImp.pas',
+  DBForgeClientImp in '..\Design\DBForgeClientImp.pas',
+  DBForgeStudioClientImp in '..\Design\DBForgeStudioClientImp.pas',
+  CRDesign in '..\Design\CRDesign.pas',
+  CRDesignUtils in '..\Design\CRDesignUtils.pas',
+  DADesign in '..\Design\DADesign.pas',
+  DADesignUtils in '..\Design\DADesignUtils.pas',
+  CRVersionChecker in '..\Design\CRVersionChecker.pas',
+  DAConditionsFrame in '..\Design\DAConditionsFrame.pas';
+
+end.

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <Name Value="msprovider10"/>
+    <CompilerOptions>
+      <Version Value="5"/>
+      <SearchPaths>
+        <IncludeFiles Value="../;../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/;../../../;../../../../../Common/Source/"/>
+        <OtherUnitFiles Value="../;../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/;../../../;../../../../../Common/Source/;../../;../UniProviders/SQLServer/"/>
+        <UnitOutputDirectory Value="../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/"/>
+        <ObjectPath Value="../;../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <IncludeAssertionCode Value="True"/>
+          <DelphiCompat Value="True"/>
+        </SyntaxOptions>
+      </Parsing>
+      <CodeGeneration>
+        <Checks>
+          <IOChecks Value="True"/>
+        </Checks>
+        <Optimizations>
+          <OptimizationLevel Value="2"/>
+        </Optimizations>
+      </CodeGeneration>
+      <Linking>
+        <Debugging>
+          <UseLineInfoUnit Value="False"/>
+        </Debugging>
+      </Linking>
+      <Other>
+        <CustomOptions Value="-dUNIDACPRO"/>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="SQL Server UniDAC Provider"/>
+    <Version Major="8" Minor="4" Release="2" Build="0"/>
+    <Files Count="10">
+      <Item1>
+        <Filename Value="../UniProviders/SQLServer/SQLServerUniProvider.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="SQLServerUniProvider"/>
+      </Item1>
+      <Item2>
+        <Filename Value="../UniProviders/SQLServer/MSParserUni.pas"/>
+        <UnitName Value="MSParserUni"/>
+      </Item2>
+      <Item3>
+        <Filename Value="../UniProviders/SQLServer/MSConstsUni.pas"/>
+        <UnitName Value="MSConstsUni"/>
+      </Item3>
+      <Item4>
+        <Filename Value="../UniProviders/SQLServer/MSPropsUni.pas"/>
+        <UnitName Value="MSPropsUni"/>
+      </Item4>
+      <Item5>
+        <Filename Value="../UniProviders/SQLServer/MSConnectionPoolUni.pas"/>
+        <UnitName Value="MSConnectionPoolUni"/>
+      </Item5>
+      <Item6>
+        <Filename Value="../UniProviders/SQLServer/MSServicesUni.pas"/>
+        <UnitName Value="MSServicesUni"/>
+      </Item6>
+      <Item7>
+        <Filename Value="../UniProviders/SQLServer/MSServerEnumeratorUni.pas"/>
+        <UnitName Value="MSServerEnumeratorUni"/>
+      </Item7>
+      <Item8>
+        <Filename Value="../UniProviders/SQLServer/MSScriptProcessorUni.pas"/>
+        <UnitName Value="MSScriptProcessorUni"/>
+      </Item8>
+      <Item9>
+        <Filename Value="../UniProviders/SQLServer/MSDataTypeMapUni.pas"/>
+        <UnitName Value="MSDataTypeMapUni"/>
+      </Item9>
+      <Item10>
+        <Filename Value="../UniProviders/SQLServer/MSSQLGeneratorUni.pas"/>
+        <UnitName Value="MSSQLGeneratorUni"/>
+      </Item10>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="5">
+      <Item1>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="dac10"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="unidac10"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="tdsprovider10"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

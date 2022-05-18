@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="E:\lazarus\fpc\3.2.0\bin\x86_64-win64\fpc.exe" Date="1357350767"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq -FiE:\source\delphisource\thinkpas\vendor\fpRedis\lib\x86_64-win64 -FiC:\Users\Administrator\AppData\Local\lazarus\onlinepackagemanager\packages\zeosdbo\src -FlE:\source\delphisource\thinkpas\vendor\mORMot\static\x86_64-win64 -FuE:\source\delphisource\package\synapse40.1 -FuE:\source\delphisource\thinkpas\vendor\fpRedis\ -FUE:\source\delphisource\thinkpas\vendor\fpRedis\lib\x86_64-win64\ -FEE:\source\delphisource\thinkpas\vendor\fpRedis\ -oE:\source\delphisource\thinkpas\vendor\fpRedis\test_protocol.exe test_protocol.lpr"/>
+</CONFIG>

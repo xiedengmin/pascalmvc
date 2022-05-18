@@ -1,0 +1,46 @@
+package freshbooksprovider240;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IFNDEF POSIX}
+{$IMAGEBASE $400000}
+{$ENDIF}
+{$DESCRIPTION 'UniDAC FreshBooks Provider'}
+{$IMPLICITBUILD OFF}
+{$DEFINE UNIDACPRO}
+
+requires
+  rtl,
+  dac240,
+  unidac240,
+  odbcprovider240;
+
+contains
+  FreshBooksClassesUni in '..\UniProviders\FreshBooks\FreshBooksClassesUni.pas',
+  FreshBooksConnectionPoolUni in '..\UniProviders\FreshBooks\FreshBooksConnectionPoolUni.pas',
+  FreshBooksConnectionStringUni in '..\UniProviders\FreshBooks\FreshBooksConnectionStringUni.pas',
+  FreshBooksConstsUni in '..\UniProviders\FreshBooks\FreshBooksConstsUni.pas',
+  FreshBooksPropsUni in '..\UniProviders\FreshBooks\FreshBooksPropsUni.pas',
+  FreshBooksUniProvider in '..\UniProviders\FreshBooks\FreshBooksUniProvider.pas';
+
+end.
+

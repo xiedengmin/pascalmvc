@@ -1,0 +1,63 @@
+package nexusprovider240;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'UniDAC NexusDB Provider'}
+{$IMPLICITBUILD OFF}
+{.$DEFINE NEXUS_EMBEDDED}
+{$DEFINE UNIDACPRO}
+
+requires
+  rtl,
+  NexusDB450db240,
+  NexusDB450sd240,
+  NexusDB450ll240,
+  NexusDB450sr240,
+  NexusDB450sq240,
+  NexusDB450se240,
+{$IFNDEF NEXUS_EMBEDDED}
+  NexusDB450pt240,
+  NexusDB450tn240,
+  NexusDB450ts240,
+  NexusDB450tw240,
+  NexusDB450st240,
+  NexusDB450re240,
+{$ENDIF}  
+  dac240,
+  unidac240;
+
+contains
+  NexusDBUniProvider in '..\UniProviders\NexusDB\NexusDBUniProvider.pas',
+  NexusClassesUni in '..\UniProviders\NexusDB\NexusClassesUni.pas',
+  NexusPropsUni in '..\UniProviders\NexusDB\NexusPropsUni.pas',
+  NexusConnectionPoolUni in '..\UniProviders\NexusDB\NexusConnectionPoolUni.pas',
+  NexusConstsUni in '..\UniProviders\NexusDB\NexusConstsUni.pas',
+  NexusErrorUni in '..\UniProviders\NexusDB\NexusErrorUni.pas',
+  NexusParserUni in '..\UniProviders\NexusDB\NexusParserUni.pas',
+  NexusDataTypeMapUni in '..\UniProviders\NexusDB\NexusDataTypeMapUni.pas',
+  NexusServicesUni in '..\UniProviders\NexusDB\NexusServicesUni.pas',
+  NexusSQLGeneratorUni in '..\UniProviders\NexusDB\NexusSQLGeneratorUni.pas',
+  NexusConnectionStringUni in '..\UniProviders\NexusDB\NexusConnectionStringUni.pas';
+
+end.
+

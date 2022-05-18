@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<#include file="/include.html" />
+	<script src="__APP__/assets/echarts.simple.min.js"></script>
+	<title>MVC案例</title>
+</head>
+
+<body>
+	<div>
+		<form class="layui-form">
+			<div class="layui-form-item">
+				<label class="layui-form-label">年度</label>
+				<div class="layui-input-inline">
+					<input type="number" maxlength="4" name="year" id="year" lay-verify="year" value="#{year}"
+						placeholder="" autocomplete="off" class="layui-input">
+				</div>
+				<div class="layui-input-inline">
+					<input type="button" class="layui-btn" id="btnsearch" value="查询" />
+				</div>
+			</div>
+		</form>
+		<div style="height: 500px; ">
+			<div style="float:left; with:500px;">
+				<div id="div1" style="width:600px;height: 400px;"></div>
+			</div>
+			<div style="float:left; with:500px;">
+	
+				<table id="tbaccount"></table>
+	
+			</div>
+		</div>
+		
+	</div>
+</body>
+
+</html>
+<script>
+
+	$(function () {
+		search();
+	});
+	$("#btnsearch").click(function () {
+		search();
+
+	});
+
+	function showtable(data) {
+		layui.use(['table', 'form'], function () {
+			var table = layui.table;
+			var form = layui.form;
+			form.render();
+			table.render({
+				elem: '#tbaccount',
+				data: data,
+				limit:20,
+				page: false,
+				
+				cellMinWidth: 80, //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+				cols: [
+					[{
+						field: 'month',
+						width: 100,
+						title: '月份',
+						sort: true
+					}, {
+						field: 'con',
+						width: 100,
+						title: '数量(个)'
+					}
+
+					]
+				]
+			});
+		});
+	}
+
+	function search() {
+
+		var year = $("#year").val();
+		if (year.length < 4) {
+			layer.msg("请输入年度");
+			return;
+		}
+		$.get("getdata", {
+			year: $("#year").val()
+		}, function (ret) {
+			var data1 = [];
+			var data2 = [];
+			for (var p in ret) {
+				data1.push(ret[p].month);
+				data2.push(ret[p].con);
+			}
+			showtable(ret);
+			setchart(data1, data2);
+			
+
+
+		});
+	}
+	var dom = document.getElementById("div1");
+	var myChart = echarts.init(dom);
+	var app = {};
+	option = null;
+	function setchart(data1, data2) {
+		myChart.clear();
+		option = null;
+		option = {
+			title: {
+				text: '注册情况统计（单位:个）'
+			},
+			color: ['#3398DB'],
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: { // 坐标轴指示器，坐标轴触发有效
+					type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+				}
+			},
+			grid: {
+				left: '3%',
+				right: '4%',
+				bottom: '3%',
+				containLabel: true
+			},
+			xAxis: [{
+				type: 'category',
+				data: data1,
+				axisTick: {
+					alignWithLabel: true
+				}
+			}],
+			yAxis: [{
+				type: 'value'
+			}],
+			series: [{
+				name: '数量',
+				type: 'bar',
+				label: {
+					normal: {
+						show: true,
+						position: 'inside'
+					}
+				},
+				barWidth: '60%',
+				data: data2,
+			}]
+		};
+		myChart.setOption(option, true);
+	}
+</script>
+</div>

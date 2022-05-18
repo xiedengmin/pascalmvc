@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <Name Value="rsprovider10"/>
+    <CompilerOptions>
+      <Version Value="8"/>
+      <SearchPaths>
+        <IncludeFiles Value="../;../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/;../../../;../../../../../Common/Source/;../../../../../PostgreSql/Source/"/>
+        <OtherUnitFiles Value="../;../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/;../../../;../../../../../Common/Source/;../../../../../PostgreSql/Source/;../../;../UniProviders/Redshift/"/>
+        <UnitOutputDirectory Value="../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/"/>
+        <ObjectPath Value="../;../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <SyntaxMode Value="Delphi"/>
+          <IncludeAssertionCode Value="True"/>
+        </SyntaxOptions>
+      </Parsing>
+      <CodeGeneration>
+        <Checks>
+          <IOChecks Value="True"/>
+        </Checks>
+        <Optimizations>
+          <OptimizationLevel Value="2"/>
+        </Optimizations>
+      </CodeGeneration>
+      <Linking>
+        <Debugging>
+          <UseLineInfoUnit Value="False"/>
+        </Debugging>
+      </Linking>
+      <Other>
+        <CustomOptions Value="-dUNIDACPRO"/>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="Redshift UniDAC Provider"/>
+    <Version Major="8" Minor="4" Release="2" Build="0"/>
+    <Files Count="2">
+      <Item1>
+        <Filename Value="../UniProviders/Redshift/RedshiftUniProvider.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="RedshiftUniProvider"/>
+      </Item1>
+      <Item2>
+        <Filename Value="../UniProviders/Redshift/RsConnectionStringUni.pas"/>
+        <UnitName Value="RsConnectionStringUni"/>
+      </Item2>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="5">
+      <Item1>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="dac10"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="unidac10"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="pgprovider10"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

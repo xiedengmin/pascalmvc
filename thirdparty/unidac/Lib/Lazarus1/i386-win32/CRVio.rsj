@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":17126610,"name":"crvio.svioerror","sourcebytes":[73,110,112,117,116,47,79,117,116,112,117,116,32,101,114,114,111,114],"value":"Input\/Output error"},
+{"hash":50126035,"name":"crvio.snotoverriden","sourcebytes":[78,111,116,32,111,118,101,114,114,105,100,101,110,32,105,110,32,97,110,32,105,110,104,101,114,105,116,101,100,32,99,108,97,115,115],"value":"Not overriden in an inherited class"}
+]}

@@ -1,0 +1,176 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{2c7e1d19-227a-4b88-b270-15bc52bc269d}</ProjectGuid>
+		<MainSource>msprovider170.dpk</MainSource>
+		<DCC_DependencyCheckOutputName>msprovider170.bpl</DCC_DependencyCheckOutputName>
+		<ProjectVersion>14.4</ProjectVersion>
+		<FrameworkType>None</FrameworkType>
+		<Base>True</Base>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+		<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		<TargetedPlatforms>7</TargetedPlatforms>
+		<AppType>Package</AppType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+		<Base_Win64>true</Base_Win64>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Base)'=='true') or '$(Base_OSX32)'!=''">
+		<Base_OSX32>true</Base_OSX32>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+		<Base_Win32>true</Base_Win32>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+		<Cfg_1>true</Cfg_1>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+		<Cfg_1_Win32>true</Cfg_1_Win32>
+		<CfgParent>Cfg_1</CfgParent>
+		<Cfg_1>true</Cfg_1>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+		<Cfg_2>true</Cfg_2>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+		<DCC_DcuOutput>..\..\Lib\Delphi17\$(Platform)</DCC_DcuOutput>
+		<DCC_HppOutput>..\..\Include\Delphi17\$(Platform)</DCC_HppOutput>
+		<DCC_UnitSearchPath>..\;..\..\Lib\Delphi17\$(Platform);$(BDSCOMMONDIR)\Dcp\$(Platform);..\..\;..\..\..\..\Sdac\Source</DCC_UnitSearchPath>
+		<DCC_DependencyCheckOutputName>msprovider170.bpl</DCC_DependencyCheckOutputName>
+		<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+		<DCC_Define>UNIDACPRO;$(DCC_Define)</DCC_Define>
+		<DCC_Namespace>System;Data;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+		<DCC_Description>Universal Data Access Components</DCC_Description>
+		<GenPackage>true</GenPackage>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+		<DCC_WriteableConstants>true</DCC_WriteableConstants>
+		<DCC_DebugInformation>false</DCC_DebugInformation>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_ObjOutput>.</DCC_ObjOutput>
+		<DCC_ResourcePath>..\;..\..\;..\..\..\..\Sdac\Source</DCC_ResourcePath>
+		<DCC_ObjPath>..\;..\..\;..\..\..\..\Sdac\Source</DCC_ObjPath>
+		<DCC_IncludePath>..\;..\..\;..\..\..\..\Sdac\Source</DCC_IncludePath>
+		<DCC_Define>UNIDACPRO;RELEASE</DCC_Define>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_ObjOutput>.</DCC_ObjOutput>
+		<DCC_ResourcePath>..\;..\..\;..\..\..\..\Sdac\Source</DCC_ResourcePath>
+		<DCC_ObjPath>..\;..\..\;..\..\..\..\Sdac\Source</DCC_ObjPath>
+		<DCC_IncludePath>..\;..\..\;..\..\..\..\Sdac\Source</DCC_IncludePath>
+		<DCC_Define>UNIDACPRO;DEBUG</DCC_Define>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="msprovider170.dpk">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="dac170.dcp"/>
+		<DCCReference Include="unidac170.dcp"/>
+		<DCCReference Include="tdsprovider170.dcp"/>
+		<DCCReference Include="..\..\Uni\OLEDBAccessUni.pas"/>
+		<DCCReference Include="..\..\Uni\OLEDBCUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSParserUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSConstsUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSServerEnumeratorUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSPropsUni.pas"/>
+		<DCCReference Include="..\..\Uni\OLEDBIntfUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSClassesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSFunctionsUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7ConstsUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7PacketsUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7NetUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7WinAuthUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7ProtocolUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7ClassesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSUDTUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSConnectionPoolUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSConnectionStringUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSServicesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSScriptProcessorUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSDataTypeMapUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSSQLGeneratorUni.pas"/>
+		<DCCReference Include="..\..\SQLServerUniProvider.pas"/>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_Release</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_Debug</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject>
+			<Delphi.Personality>
+				<Parameters/>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Name="MajorVer">8</VersionInfo>
+					<VersionInfo Name="MinorVer">4</VersionInfo>
+					<VersionInfo Name="Release">2</VersionInfo>
+					<VersionInfo Name="Build">0</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Name="FileVersion">8.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName">UniDac</VersionInfoKeys>
+					<VersionInfoKeys Name="ProductVersion">8.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="Comments"/>
+				</VersionInfoKeys>
+				<Source>
+					<Source Name="MainSource">msprovider170.dpk</Source>
+				</Source>
+			</Delphi.Personality>
+			<Platforms>
+				<Platform value="OSX32">True</Platform>
+				<Platform value="Win32">True</Platform>
+				<Platform value="Win64">True</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+</Project>

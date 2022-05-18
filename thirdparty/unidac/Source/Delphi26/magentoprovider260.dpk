@@ -1,0 +1,46 @@
+package magentoprovider260;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IFNDEF POSIX}
+{$IMAGEBASE $400000}
+{$ENDIF}
+{$DESCRIPTION 'UniDAC Magento Provider'}
+{$IMPLICITBUILD OFF}
+{$DEFINE UNIDACPRO}
+
+requires
+  rtl,
+  dac260,
+  unidac260,
+  odbcprovider260;
+
+contains
+  MagentoClassesUni in '..\UniProviders\Magento\MagentoClassesUni.pas',
+  MagentoConnectionPoolUni in '..\UniProviders\Magento\MagentoConnectionPoolUni.pas',
+  MagentoConnectionStringUni in '..\UniProviders\Magento\MagentoConnectionStringUni.pas',
+  MagentoConstsUni in '..\UniProviders\Magento\MagentoConstsUni.pas',
+  MagentoPropsUni in '..\UniProviders\Magento\MagentoPropsUni.pas',
+  MagentoUniProvider in '..\UniProviders\Magento\MagentoUniProvider.pas';
+
+end.
+

@@ -1,0 +1,153 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{2c7e1d19-227a-4b88-b270-15bc52bc269d}</ProjectGuid>
+		<MainSource>msprovider140.dpk</MainSource>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		<DCC_DependencyCheckOutputName>D:\Documents and Settings\All Users\Documents\RAD Studio\7.0\Bpl\msprovider140.bpl</DCC_DependencyCheckOutputName>
+		<ProjectVersion>11.1</ProjectVersion>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_Release)'!=''">
+		<Cfg_Release>true</Cfg_Release>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_Debug)'!=''">
+		<Cfg_Debug>true</Cfg_Debug>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+		<DCC_DependencyCheckOutputName>msprovider140.bpl</DCC_DependencyCheckOutputName>
+		<DCC_DcuOutput>..\..\Lib\Delphi14</DCC_DcuOutput>
+		<DCC_HppOutput>..\..\Include\Delphi14</DCC_HppOutput>
+		<DCC_UnitSearchPath>..\;..\..\Lib\Delphi14;$(BDSCOMMONDIR)\Dcp\$(Platform);..\..\..\..\Sdac\Source</DCC_UnitSearchPath>
+		<DCC_ImageBase>00400000</DCC_ImageBase>
+		<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+		<DCC_Define>UNIDACPRO;$(DCC_Define)</DCC_Define>
+		<DCC_Description>Universal Data Access Components</DCC_Description>
+		<DesignOnlyPackage>false</DesignOnlyPackage>
+		<GenPackage>true</GenPackage>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+		<DCC_WriteableConstants>true</DCC_WriteableConstants>
+		<DCC_DebugInformation>false</DCC_DebugInformation>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_ObjOutput>.</DCC_ObjOutput>
+		<DCC_ResourcePath>..\..\..\..\Sdac\Source</DCC_ResourcePath>
+		<DCC_ObjPath>..\..\..\..\Sdac\Source</DCC_ObjPath>
+		<DCC_IncludePath>..\..\..\..\Sdac\Source</DCC_IncludePath>
+		<DCC_Define>UNIDACPRO;RELEASE</DCC_Define>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_ObjOutput>.</DCC_ObjOutput>
+		<DCC_ResourcePath>..\..\..\..\Sdac\Source</DCC_ResourcePath>
+		<DCC_ObjPath>..\..\..\..\Sdac\Source</DCC_ObjPath>
+		<DCC_IncludePath>..\..\..\..\Sdac\Source</DCC_IncludePath>
+		<DCC_Define>UNIDACPRO;DEBUG</DCC_Define>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="msprovider140.dpk">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="dac140.dcp"/>
+		<DCCReference Include="unidac140.dcp"/>
+		<DCCReference Include="tdsprovider140.dcp"/>
+		<DCCReference Include="..\..\Uni\OLEDBAccessUni.pas"/>
+		<DCCReference Include="..\..\Uni\OLEDBCUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSParserUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSConstsUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSServerEnumeratorUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSPropsUni.pas"/>
+		<DCCReference Include="..\..\Uni\OLEDBIntfUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSClassesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSFunctionsUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7ConstsUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7PacketsUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7NetUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7WinAuthUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7ProtocolUni.pas"/>
+		<DCCReference Include="..\..\Uni\Tds7ClassesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSUDTUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSConnectionPoolUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSConnectionStringUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSServicesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSScriptProcessorUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSDataTypeMapUni.pas"/>
+		<DCCReference Include="..\..\Uni\MSSQLGeneratorUni.pas"/>
+		<DCCReference Include="..\..\SQLServerUniProvider.pas"/>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_Release</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_Debug</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject><BorlandProject>
+				<Delphi.Personality>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">8</VersionInfo>
+						<VersionInfo Name="MinorVer">4</VersionInfo>
+						<VersionInfo Name="Release">2</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">8.4.2.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+						<VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+						<VersionInfoKeys Name="ProductName">SDAC</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">8.4.2.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"></VersionInfoKeys>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">msprovider140.dpk</Source>
+					</Source>
+				</Delphi.Personality>
+			</BorlandProject>
+		</BorlandProject>
+	</ProjectExtensions>
+</Project>

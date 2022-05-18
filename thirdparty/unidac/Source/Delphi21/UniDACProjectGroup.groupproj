@@ -1,0 +1,492 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{65C5F01F-952D-40CB-B1EE-B411D3759908}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="dac210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dacvcl210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dacfmx210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dcldac210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="unidac210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="unidacvcl210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="unidacfmx210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dclunidac210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dclunidacfmx210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="oraprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tdsprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="msprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="myprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ibprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="pgprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="liteprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="nexusprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="odbcprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="accessprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="adsprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="aseprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="mongoprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="db2provider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="vquery210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dbfprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="bigcommerceprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dynamicsprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="exacttargetprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="freshbooksprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="magentoprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="mailchimpprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="netsuiteprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="quickbooksprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="salesforceprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="sugarproviderprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="zohoprovider210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dclvquery210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="crcontrols210.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dclcrcontrols210.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="dac210">
+        <MSBuild Projects="dac210.dproj"/>
+    </Target>
+    <Target Name="dac210:Clean">
+        <MSBuild Projects="dac210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dac210:Make">
+        <MSBuild Projects="dac210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dacvcl210">
+        <MSBuild Projects="dacvcl210.dproj"/>
+    </Target>
+    <Target Name="dacvcl210:Clean">
+        <MSBuild Projects="dacvcl210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dacvcl210:Make">
+        <MSBuild Projects="dacvcl210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dacfmx210">
+        <MSBuild Projects="dacfmx210.dproj"/>
+    </Target>
+    <Target Name="dacfmx210:Clean">
+        <MSBuild Projects="dacfmx210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dacfmx210:Make">
+        <MSBuild Projects="dacfmx210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dcldac210">
+        <MSBuild Projects="dcldac210.dproj"/>
+    </Target>
+    <Target Name="dcldac210:Clean">
+        <MSBuild Projects="dcldac210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dcldac210:Make">
+        <MSBuild Projects="dcldac210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="unidac210">
+        <MSBuild Projects="unidac210.dproj"/>
+    </Target>
+    <Target Name="unidac210:Clean">
+        <MSBuild Projects="unidac210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="unidac210:Make">
+        <MSBuild Projects="unidac210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="unidacvcl210">
+        <MSBuild Projects="unidacvcl210.dproj"/>
+    </Target>
+    <Target Name="unidacvcl210:Clean">
+        <MSBuild Projects="unidacvcl210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="unidacvcl210:Make">
+        <MSBuild Projects="unidacvcl210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="unidacfmx210">
+        <MSBuild Projects="unidacfmx210.dproj"/>
+    </Target>
+    <Target Name="unidacfmx210:Clean">
+        <MSBuild Projects="unidacfmx210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="unidacfmx210:Make">
+        <MSBuild Projects="unidacfmx210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dclunidac210">
+        <MSBuild Projects="dclunidac210.dproj"/>
+    </Target>
+    <Target Name="dclunidac210:Clean">
+        <MSBuild Projects="dclunidac210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclunidac210:Make">
+        <MSBuild Projects="dclunidac210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dclunidacfmx210">
+        <MSBuild Projects="dclunidacfmx210.dproj"/>
+    </Target>
+    <Target Name="dclunidacfmx210:Clean">
+        <MSBuild Projects="dclunidacfmx210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclunidacfmx210:Make">
+        <MSBuild Projects="dclunidacfmx210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="oraprovider210">
+        <MSBuild Projects="oraprovider210.dproj"/>
+    </Target>
+    <Target Name="oraprovider210:Clean">
+        <MSBuild Projects="oraprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="oraprovider210:Make">
+        <MSBuild Projects="oraprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="tdsprovider210">
+        <MSBuild Projects="tdsprovider210.dproj"/>
+    </Target>
+    <Target Name="tdsprovider210:Clean">
+        <MSBuild Projects="tdsprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="tdsprovider210:Make">
+        <MSBuild Projects="tdsprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="msprovider210">
+        <MSBuild Projects="msprovider210.dproj"/>
+    </Target>
+    <Target Name="msprovider210:Clean">
+        <MSBuild Projects="msprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="msprovider210:Make">
+        <MSBuild Projects="msprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="myprovider210">
+        <MSBuild Projects="myprovider210.dproj"/>
+    </Target>
+    <Target Name="myprovider210:Clean">
+        <MSBuild Projects="myprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="myprovider210:Make">
+        <MSBuild Projects="myprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ibprovider210">
+        <MSBuild Projects="ibprovider210.dproj"/>
+    </Target>
+    <Target Name="ibprovider210:Clean">
+        <MSBuild Projects="ibprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ibprovider210:Make">
+        <MSBuild Projects="ibprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="pgprovider210">
+        <MSBuild Projects="pgprovider210.dproj"/>
+    </Target>
+    <Target Name="pgprovider210:Clean">
+        <MSBuild Projects="pgprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pgprovider210:Make">
+        <MSBuild Projects="pgprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="liteprovider210">
+        <MSBuild Projects="liteprovider210.dproj"/>
+    </Target>
+    <Target Name="liteprovider210:Clean">
+        <MSBuild Projects="liteprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="liteprovider210:Make">
+        <MSBuild Projects="liteprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="nexusprovider210">
+        <MSBuild Projects="nexusprovider210.dproj"/>
+    </Target>
+    <Target Name="nexusprovider210:Clean">
+        <MSBuild Projects="nexusprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="nexusprovider210:Make">
+        <MSBuild Projects="nexusprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="odbcprovider210">
+        <MSBuild Projects="odbcprovider210.dproj"/>
+    </Target>
+    <Target Name="odbcprovider210:Clean">
+        <MSBuild Projects="odbcprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="odbcprovider210:Make">
+        <MSBuild Projects="odbcprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="accessprovider210">
+        <MSBuild Projects="accessprovider210.dproj"/>
+    </Target>
+    <Target Name="accessprovider210:Clean">
+        <MSBuild Projects="accessprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="accessprovider210:Make">
+        <MSBuild Projects="accessprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="adsprovider210">
+        <MSBuild Projects="adsprovider210.dproj"/>
+    </Target>
+    <Target Name="adsprovider210:Clean">
+        <MSBuild Projects="adsprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="adsprovider210:Make">
+        <MSBuild Projects="adsprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="aseprovider210">
+        <MSBuild Projects="aseprovider210.dproj"/>
+    </Target>
+    <Target Name="aseprovider210:Clean">
+        <MSBuild Projects="aseprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aseprovider210:Make">
+        <MSBuild Projects="aseprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="mongoprovider210">
+        <MSBuild Projects="mongoprovider210.dproj"/>
+    </Target>
+    <Target Name="mongoprovider210:Clean">
+        <MSBuild Projects="mongoprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mongoprovider210:Make">
+        <MSBuild Projects="mongoprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vquery210">
+        <MSBuild Projects="vquery210.dproj"/>
+    </Target>
+    <Target Name="vquery210:Clean">
+        <MSBuild Projects="vquery210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vquery210:Make">
+        <MSBuild Projects="vquery210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="db2provider210">
+        <MSBuild Projects="db2provider210.dproj"/>
+    </Target>
+    <Target Name="db2provider210:Clean">
+        <MSBuild Projects="db2provider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="db2provider210:Make">
+        <MSBuild Projects="db2provider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dbfprovider210">
+        <MSBuild Projects="dbfprovider210.dproj"/>
+    </Target>
+    <Target Name="dbfprovider210:Clean">
+        <MSBuild Projects="dbfprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dbfprovider210:Make">
+        <MSBuild Projects="dbfprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="bigcommerceprovider210">
+        <MSBuild Projects="bigcommerceprovider210.dproj"/>
+    </Target>
+    <Target Name="bigcommerceprovider210:Clean">
+        <MSBuild Projects="bigcommerceprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="bigcommerceprovider210:Make">
+        <MSBuild Projects="bigcommerceprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dynamicsprovider210">
+        <MSBuild Projects="dynamicsprovider210.dproj"/>
+    </Target>
+    <Target Name="dynamicsprovider210:Clean">
+        <MSBuild Projects="dynamicsprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dynamicsprovider210:Make">
+        <MSBuild Projects="dynamicsprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="exacttargetprovider210">
+        <MSBuild Projects="exacttargetprovider210.dproj"/>
+    </Target>
+    <Target Name="exacttargetprovider210:Clean">
+        <MSBuild Projects="exacttargetprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="exacttargetprovider210:Make">
+        <MSBuild Projects="exacttargetprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="freshbooksprovider210">
+        <MSBuild Projects="freshbooksprovider210.dproj"/>
+    </Target>
+    <Target Name="freshbooksprovider210:Clean">
+        <MSBuild Projects="freshbooksprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="freshbooksprovider210:Make">
+        <MSBuild Projects="freshbooksprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="magentoprovider210">
+        <MSBuild Projects="magentoprovider210.dproj"/>
+    </Target>
+    <Target Name="magentoprovider210:Clean">
+        <MSBuild Projects="magentoprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="magentoprovider210:Make">
+        <MSBuild Projects="magentoprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="mailchimpprovider210">
+        <MSBuild Projects="mailchimpprovider210.dproj"/>
+    </Target>
+    <Target Name="mailchimpprovider210:Clean">
+        <MSBuild Projects="mailchimpprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mailchimpprovider210:Make">
+        <MSBuild Projects="mailchimpprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="netsuiteprovider210">
+        <MSBuild Projects="netsuiteprovider210.dproj"/>
+    </Target>
+    <Target Name="netsuiteprovider210:Clean">
+        <MSBuild Projects="netsuiteprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="netsuiteprovider210:Make">
+        <MSBuild Projects="netsuiteprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="quickbooksprovider210">
+        <MSBuild Projects="quickbooksprovider210.dproj"/>
+    </Target>
+    <Target Name="quickbooksprovider210:Clean">
+        <MSBuild Projects="quickbooksprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="quickbooksprovider210:Make">
+        <MSBuild Projects="quickbooksprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="salesforceprovider210">
+        <MSBuild Projects="salesforceprovider210.dproj"/>
+    </Target>
+    <Target Name="salesforceprovider210:Clean">
+        <MSBuild Projects="salesforceprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="salesforceprovider210:Make">
+        <MSBuild Projects="salesforceprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="sugarprovider210">
+        <MSBuild Projects="sugarprovider210.dproj"/>
+    </Target>
+    <Target Name="sugarprovider210:Clean">
+        <MSBuild Projects="sugarprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="sugarprovider210:Make">
+        <MSBuild Projects="sugarprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="zohoprovider210">
+        <MSBuild Projects="zohoprovider210.dproj"/>
+    </Target>
+    <Target Name="zohoprovider210:Clean">
+        <MSBuild Projects="zohoprovider210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="zohoprovider210:Make">
+        <MSBuild Projects="zohoprovider210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dclvquery210">
+        <MSBuild Projects="dclvquery210.dproj"/>
+    </Target>
+    <Target Name="dclvquery210:Clean">
+        <MSBuild Projects="dclvquery210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclvquery210:Make">
+        <MSBuild Projects="dclvquery210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="crcontrols210">
+        <MSBuild Projects="crcontrols210.dproj"/>
+    </Target>
+    <Target Name="crcontrols210:Clean">
+        <MSBuild Projects="crcontrols210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="crcontrols210:Make">
+        <MSBuild Projects="crcontrols210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dclcrcontrols210">
+        <MSBuild Projects="dclcrcontrols210.dproj"/>
+    </Target>
+    <Target Name="dclcrcontrols210:Clean">
+        <MSBuild Projects="dclcrcontrols210.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclcrcontrols210:Make">
+        <MSBuild Projects="dclcrcontrols210.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="dac210;dacvcl210;dacfmx210;dcldac210;unidac210;unidacvcl210;unidacfmx210;dclunidac210;dclunidacfmx210;oraprovider210;tdsprovider210;msprovider210;myprovider210;ibprovider210;pgprovider210;liteprovider210;nexusprovider210;odbcprovider210;accessprovider210;adsprovider210;aseprovider210;mongoprovider210;db2provider210;vquery210;dbfprovider210;bigcommerceprovider210;dynamicsprovider210;exacttargetprovider210;freshbooksprovider210;magentoprovider210;mailchimpprovider210;netsuiteprovider210;quickbooksprovider210;salesforceprovider210;sugarprovider210;zohoprovider210;dclvquery210;crcontrols210;dclcrcontrols210"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="dac210:Clean;dacvcl210:Clean;dacfmx210:Clean;dcldac210:Clean;unidac210:Clean;unidacvcl210:Clean;unidacfmx210:Clean;dclunidac210:Clean;dclunidacfmx210:Clean;oraprovider210:Clean;tdsprovider210:Clean;msprovider210:Clean;myprovider210:Clean;ibprovider210:Clean;pgprovider210:Clean;liteprovider210:Clean;nexusprovider210:Clean;odbcprovider210:Clean;accessprovider210:Clean;adsprovider210:Clean;aseprovider210:Clean;mongoprovider210:Clean;db2provider210:Clean;vquery210:Clean;dbfprovider210:Clean;bigcommerceprovider210:Clean;dynamicsprovider210:Clean;exacttargetprovider210:Clean;freshbooksprovider210:Clean;magentoprovider210:Clean;mailchimpprovider210:Clean;netsuiteprovider210:Clean;quickbooksprovider210:Clean;salesforceprovider210:Clean;sugarprovider210:Clean;zohoprovider210:Clean;dclvquery210:Clean;crcontrols210:Clean;dclcrcontrols210:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="dac210:Make;dacvcl210:Make;dacfmx210:Make;dcldac210:Make;unidac210:Make;unidacvcl210:Make;unidacfmx210:Make;dclunidac210:Make;dclunidacfmx210:Make;oraprovider210:Make;tdsprovider210:Make;msprovider210:Make;myprovider210:Make;ibprovider210:Make;pgprovider210:Make;liteprovider210:Make;nexusprovider210:Make;odbcprovider210:Make;accessprovider210:Make;adsprovider210:Make;aseprovider210:Make;mongoprovider210:Make;db2provider210:Make;vquery210:Make;dbfprovider210:Make;bigcommerceprovider210:Make;dynamicsprovider210:Make;exacttargetprovider210:Make;freshbooksprovider210:Make;magentoprovider210:Make;mailchimpprovider210:Make;netsuiteprovider210:Make;quickbooksprovider210:Make;salesforceprovider210:Make;sugarprovider210:Make;zohoprovider210:Make;dclvquery210:Make;crcontrols210:Make;dclcrcontrols210:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

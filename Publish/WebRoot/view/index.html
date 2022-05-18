@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<title>pascalWebMVC</title>
+	<#include file="/include.html" />
+	<!--引用了element等类库-->
+</head>
+
+
+
+
+<el-row>
+  <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="8"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+</el-row>
+<el-row>
+  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+</el-row>
+<el-row>
+  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+</el-row>
+<div id="app" style="text-align: center;">
+<el-row>
+  <el-col :span="24"><div class="grid-content bg-purple-dark">sdfasdfasdfasdfasdfasdfasdf中国大跃进在地s适合。框架足够成熟了 A Survey of 5 Go Web Frameworks
+小型项目你甚至不用框架，用net/http http - The Go Programming Language
+常用库也成熟了 Top - Go Search
+golang的web后端即使不concurrent也比php，ruby，python快很多很多
+golang里用concurrent真的非常方便，非常非常快，超大web项目golang scale成本低
+如果你想，golang的部署可以比php更方便，使用go get和http.ServeAndListen()可以不用nginx和apache
+对于文件改动重新编译其实并不是大问题，看pilu/fresh · GitHub，其实你自己写shell脚本（也可以直接用go写，因为它本身就是系统语言）监控文件系统改动然后自动重新build，即使是C/C++的项目这也不是大问题，人们不用C/C++写web是因为它们不是写web app的最佳选择
+golang写的代码编译通过后，要比scripting language鲁棒，因为go compiler强制一些最佳实践
+所以如果你熟悉go或者愿意投资时间，这是一种很值得用的语言，如果你不熟悉而且项目周期很紧，还是建议你用自己最熟悉的语言，学go本身需要花时间的。
+
+我最近一个web项目是用Gorilla写的，也是边学边做 Gorilla, the golang web toolkit；这个Go by Example 挺有用。</div></el-col>
+</el-row>
+	<el-row :gutter="10">
+  <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div class="grid-content bg-purple">1</div></el-col>
+  <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple-light">2</div></el-col>
+  <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple">3</div></el-col>
+  <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div class="grid-content bg-purple-light">4</div></el-col>
+</el-row>
+
+<el-row>
+  <el-col :span="12"><div class="grid-content bg-purple"><div style="margin-top: 10px;"><image src="/image/logo.png" ></image></div></div></el-col>
+  <el-col :span="12"><div class="grid-content bg-purple-light"><h1>PascalMVC Framework</h1>	<h1>欢迎大家使用1</h1>
+	<h1>{#message}</h1>
+	<h2>ElementUI</h2>
+	</div></el-col>	
+</el-row>	
+	<h1>{#name}</h1>	
+
+    <div style="margin-top: 10px;"></div>
+	<el-button @click="save()" icon="el-icon-search">提交</el-button>
+
+        <el-progress type="circle" :percentage="num"></el-progress>
+<el-progress type="circle" :percentage="num" status="success"></el-progress>
+<el-progress type="circle" :percentage="num" status="warning"></el-progress>
+    </div>
+<div    style="text-align: center;">
+
+			<label class="layui-form-label" style="width: 40px;">用户</label>
+			<div class="layui-input-inline">
+				<select id="role" name="role">
+					<option value="0">全部</option>
+					<#list data=users item=i>
+						<option value="{#i.id}">{#i.username}{#i.sex}{#i.realname}</option>
+					</#list>
+				</select>
+			</div>
+
+			<div class="layui-btn-group" style="text-align: center;">
+				<input type="button" class="layui-btn" id="btnsearch" value="查询" />
+				<input type="button" class="layui-btn" id="btnadd" value="新增" />
+				<input type="button" class="layui-btn" id="btnprint" value="打印" />
+			</div>
+		</div>
+<div   style="text-align: center;">
+<h1>{#copyright}</h1></div>
+<style>
+  .el-row {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .el-col {
+    border-radius: 4px;
+  }
+  .bg-purple-dark {
+    background: #99a9bf;
+  }
+  .bg-purple {
+    background: #d3dce6;
+  }
+  .bg-purple-light {
+    background: #e5e9f2;
+  }
+  .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+  .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+  }
+</style>
+
+
+<script>
+new Vue({
+	el:"#app",
+	created(){
+		document.title=this.title
+	},
+	data:{
+         	
+            title:"PascalMVC",
+	},
+	methods:{
+	
+                               save:function(){
+			this.$http.get("getdata").then(function(ret){
+				this.$message({message:ret.body.msg});
+			});
+			
+		}
+	}
+})
+</script>
+
+</html>

@@ -1,0 +1,103 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{5FAD0C50-F4D5-4AAA-9719-F065A7EB292B}</ProjectGuid>
+		<MainSource>vquery105.dpk</MainSource>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		<DCC_DependencyCheckOutputName>vquery105.bpl</DCC_DependencyCheckOutputName>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+		<DCC_DcuOutput>..\..\Lib\Delphi11</DCC_DcuOutput>
+		<DCC_DcpOutput>..\..\Lib\Delphi11</DCC_DcpOutput>
+		<DCC_HppOutput>..\..\Include\Delphi11</DCC_HppOutput>
+		<DCC_UnitSearchPath>..;..\..\Lib\Delphi11</DCC_UnitSearchPath>
+		<DCC_Define>RELEASE</DCC_Define>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+		<DCC_DcuOutput>..\..\Lib\Delphi11</DCC_DcuOutput>
+		<DCC_DcpOutput>..\..\Lib\Delphi11</DCC_DcpOutput>
+		<DCC_HppOutput>..\..\Include\Delphi11</DCC_HppOutput>
+		<DCC_UnitSearchPath>..;..\..\Lib\Delphi11</DCC_UnitSearchPath>
+		<DCC_Define>DEBUG</DCC_Define>
+	</PropertyGroup>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject>
+			<BorlandProject xmlns="">
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">vquery105.dpk</Source>
+					</Source>
+					<Package_Options>
+						<Package_Options Name="PackageDescription">Devart Virtual Data Access Components</Package_Options>
+						<Package_Options Name="ImplicitBuild">False</Package_Options>
+						<Package_Options Name="DesigntimeOnly">False</Package_Options>
+						<Package_Options Name="RuntimeOnly">True</Package_Options>
+					</Package_Options>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer" Type="Integer">11</VersionInfo>
+						<VersionInfo Name="MinorVer" Type="Integer">4</VersionInfo>
+						<VersionInfo Name="Release" Type="Integer">2</VersionInfo>
+						<VersionInfo Name="Build" Type="Integer">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion" Type="String">11.4.2.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+						<VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+						<VersionInfoKeys Name="ProductName">VirtualDAC</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion" Type="String">11.4.2.0</VersionInfoKeys>
+					</VersionInfoKeys>
+				</Delphi.Personality>
+			</BorlandProject></BorlandProject>
+	</ProjectExtensions>
+	<ItemGroup/>
+	<ItemGroup>
+		<DelphiCompile Include="vquery105.dpk">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="dbrtl.dcp"/>
+		<DCCReference Include="dac105.dcp"/>
+		<DCCReference Include="..\CRVirtualConsts.pas"/>
+		<DCCReference Include="..\CRVirtualData.pas"/>
+		<DCCReference Include="..\CRVirtualQuery.pas"/>
+		<DCCReference Include="..\VirtualDataTypeMap.pas"/>
+		<DCCReference Include="..\VirtualQuery.pas"/>
+		<DCCReference Include="..\LiteClassesVirtual.pas"/>
+		<DCCReference Include="..\LiteDataTypeMapVirtual.pas"/>
+		<DCCReference Include="..\LiteConstsVirtual.pas"/>
+		<DCCReference Include="..\LiteCallVirtual.pas"/>
+		<DCCReference Include="..\LiteStaticCallVirtual.pas"/>
+		<DCCReference Include="..\LiteErrorVirtual.pas"/>
+		<DCCReference Include="..\LiteParserVirtual.pas"/>
+		<DCCReference Include="..\LitePropsVirtual.pas"/>
+		<DCCReference Include="..\LiteFunctionVirtual.pas"/>
+		<DCCReference Include="..\LiteCollationVirtual.pas"/>
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets"/>
+</Project>

@@ -1,0 +1,60 @@
+package myprovider260;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IFNDEF POSIX}
+{$IMAGEBASE $400000}
+{$ENDIF}
+{$IMPLICITBUILD OFF}
+{$DEFINE UNIDACPRO}
+
+requires
+  rtl,
+  dac260,
+  unidac260;
+
+contains
+  MyCallUni in '..\UniProviders\MySQL\MyCallUni.pas',
+  MyClassesUni in '..\UniProviders\MySQL\MyClassesUni.pas',
+  MyDataTypeMapUni in '..\UniProviders\MySQL\MyDataTypeMapUni.pas',
+  MyConnectionPoolUni in '..\UniProviders\MySQL\MyConnectionPoolUni.pas',
+  MyConnectionStringUni in '..\UniProviders\MySQL\MyConnectionStringUni.pas',
+  MyConstsUni in '..\UniProviders\MySQL\MyConstsUni.pas',
+  MyPropsUni in '..\UniProviders\MySQL\MyPropsUni.pas',
+  MyParserUni in '..\UniProviders\MySQL\MyParserUni.pas',
+  MyScriptProcessorUni in '..\UniProviders\MySQL\MyScriptProcessorUni.pas',
+  MyServicesUni in '..\UniProviders\MySQL\MyServicesUni.pas',
+  MySqlApiDirectUni in '..\UniProviders\MySQL\MySqlApiDirectUni.pas',
+  MySqlApiUni in '..\UniProviders\MySQL\MySqlApiUni.pas',
+  MySqlBindUni in '..\UniProviders\MySQL\MySqlBindUni.pas',
+  MySqlErrorsUni in '..\UniProviders\MySQL\MySqlErrorsUni.pas',
+  MySqlNetUni in '..\UniProviders\MySQL\MySqlNetUni.pas',
+  MyRSAKeyUni in '..\UniProviders\MySQL\MyRSAKeyUni.pas',
+  MySqlResultSetUni in '..\UniProviders\MySQL\MySqlResultSetUni.pas',
+  MySqlSessionUni in '..\UniProviders\MySQL\MySqlSessionUni.pas',
+  MySqlStmtUni in '..\UniProviders\MySQL\MySqlStmtUni.pas',
+  MySqlVioPipeUni in '..\UniProviders\MySQL\MySqlVioPipeUni.pas',
+  MySQLGeneratorUni in '..\UniProviders\MySQL\MySQLGeneratorUni.pas',
+  MyServerEnumeratorUni in '..\UniProviders\MySQL\MyServerEnumeratorUni.pas',
+  MySQLUniProvider in '..\UniProviders\MySQL\MySQLUniProvider.pas';
+
+end.

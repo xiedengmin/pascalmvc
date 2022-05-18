@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":189959700,"name":"rd_commands.txtmissingio","sourcebytes":[78,111,32,82,101,100,105,115,73,79,32,111,98,106,101,99,116,32,119,97,115,32,112,114,111,118,105,100,101,100],"value":"No RedisIO object was provided"},
+{"hash":172479518,"name":"rd_commands.txtunabletogetitemlength","sourcebytes":[85,110,97,98,108,101,32,116,111,32,103,101,116,32,112,114,111,112,101,114,32,105,116,101,109,32,108,101,110,103,116,104,46],"value":"Unable to get proper item length."},
+{"hash":26953422,"name":"rd_commands.txtgivenlinenovalidlength","sourcebytes":[71,105,118,101,110,32,108,105,110,101,32,40,37,115,41,32,100,111,101,115,32,110,111,116,32,99,111,110,116,97,105,110,32,118,97,108,105,100,32,108,101,110,103,116,104,46],"value":"Given line (%s) does not contain valid length."},
+{"hash":237878579,"name":"rd_commands.txtunknownstring","sourcebytes":[85,110,107,110,111,119,110,32,115,116,114,105,110,103,32,119,97,115,32,103,105,118,101,110,32,58,32,37,115],"value":"Unknown string was given : %s"},
+{"hash":73525074,"name":"rd_commands.txtemptystringgiventoparser","sourcebytes":[69,109,112,116,121,32,115,116,114,105,110,103,32,119,97,115,32,103,105,118,101,110,32,116,111,32,116,104,101,32,112,97,114,115,101,114],"value":"Empty string was given to the parser"}
+]}

@@ -1,0 +1,5 @@
+{
+	"domain": "bili7.com",
+	"certUrl": "https://acme-v02.api.letsencrypt.org/acme/cert/04b60dc51f58cd90025934b5580e6f18dbcb",
+	"certStableUrl": "https://acme-v02.api.letsencrypt.org/acme/cert/04b60dc51f58cd90025934b5580e6f18dbcb"
+}

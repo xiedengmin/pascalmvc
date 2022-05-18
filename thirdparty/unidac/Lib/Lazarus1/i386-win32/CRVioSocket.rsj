@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":63519394,"name":"crviosocket.ssocketerror","sourcebytes":[83,111,99,107,101,116,32,101,114,114,111,114],"value":"Socket error"},
+{"hash":126615844,"name":"crviosocket.ssocketnotconnected","sourcebytes":[83,111,99,107,101,116,32,110,111,116,32,99,111,110,110,101,99,116,101,100],"value":"Socket not connected"},
+{"hash":5126329,"name":"crviosocket.serrorondatawaiting","sourcebytes":[69,114,114,111,114,32,111,110,32,100,97,116,97,32,119,97,105,116,105,110,103,32,102,114,111,109,32,116,104,101,32,99,111,110,110,101,99,116,105,111,110,58,13,10,37,115,46,13,10,83,111,99,107,101,116,32,69,114,114,111,114,32,67,111,100,101,58,32,37,100,40,36,37,88,41],"value":"Error on data waiting from the connection:\r\n%s.\r\nSocket Error Code: %d($%X)"},
+{"hash":61493262,"name":"crviosocket.scannotchangehost","sourcebytes":[67,97,110,110,111,116,32,99,104,97,110,103,101,32,104,111,115,116,32,102,111,114,32,116,104,101,32,97,99,116,105,118,101,32,99,111,110,110,101,99,116,105,111,110],"value":"Cannot change host for the active connection"},
+{"hash":69976078,"name":"crviosocket.scannotchangeport","sourcebytes":[67,97,110,110,111,116,32,99,104,97,110,103,101,32,112,111,114,116,32,102,111,114,32,116,104,101,32,97,99,116,105,118,101,32,99,111,110,110,101,99,116,105,111,110],"value":"Cannot change port for the active connection"},
+{"hash":87413374,"name":"crviosocket.scannotchangetcpversion","sourcebytes":[67,97,110,110,111,116,32,99,104,97,110,103,101,32,84,67,80,47,73,80,32,118,101,114,115,105,111,110,32,102,111,114,32,116,104,101,32,97,99,116,105,118,101,32,99,111,110,110,101,99,116,105,111,110],"value":"Cannot change TCP\/IP version for the active connection"}
+]}

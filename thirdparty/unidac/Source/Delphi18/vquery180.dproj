@@ -1,0 +1,132 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{5FAD0C50-F4D5-4AAA-9719-F065A7EB292B}</ProjectGuid>
+		<MainSource>vquery180.dpk</MainSource>
+		<ProjectVersion>14.6</ProjectVersion>
+		<FrameworkType>None</FrameworkType>
+		<Base>True</Base>
+		<Config Condition="'$(Config)'==''">Release</Config>
+		<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		<AppType>Package</AppType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+		<Cfg_1>true</Cfg_1>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+		<Cfg_2>true</Cfg_2>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<DCC_Define>$(DCC_Define)</DCC_Define>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=11.4.2.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=11.4.2.0;Comments=</VerInfo_Keys>
+		<VerInfo_Locale>1049</VerInfo_Locale>
+		<DCC_DcuOutput>..\..\Lib\Delphi18\$(Platform)</DCC_DcuOutput>
+		<DCC_HppOutput>..\..\Include\Delphi18\$(Platform)</DCC_HppOutput>
+		<DCC_UnitSearchPath>..;..\..\Lib\Delphi18\$(Platform);$(BDSCOMMONDIR)\Dcp\$(Platform);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+		<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+		<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+		<GenPackage>true</GenPackage>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_1)'!=''">
+		<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		<DCC_DebugDCUs>true</DCC_DebugDCUs>
+		<DCC_Optimize>false</DCC_Optimize>
+		<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+		<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+		<DCC_RemoteDebug>true</DCC_RemoteDebug>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_2)'!=''">
+		<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+		<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="$(MainSource)">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="dbrtl.dcp"/>
+		<DCCReference Include="dac180.dcp"/>
+		<DCCReference Include="..\CRVirtualConsts.pas"/>
+		<DCCReference Include="..\CRVirtualData.pas"/>
+		<DCCReference Include="..\CRVirtualQuery.pas"/>
+		<DCCReference Include="..\VirtualDataTypeMap.pas"/>
+		<DCCReference Include="..\VirtualQuery.pas"/>
+		<DCCReference Include="..\LiteClassesVirtual.pas"/>
+		<DCCReference Include="..\LiteDataTypeMapVirtual.pas"/>
+		<DCCReference Include="..\LiteConstsVirtual.pas"/>
+		<DCCReference Include="..\LiteCallVirtual.pas"/>
+		<DCCReference Include="..\LiteStaticCallVirtual.pas"/>
+		<DCCReference Include="..\LiteErrorVirtual.pas"/>
+		<DCCReference Include="..\LiteParserVirtual.pas"/>
+		<DCCReference Include="..\LitePropsVirtual.pas"/>
+		<DCCReference Include="..\LiteFunctionVirtual.pas"/>
+		<DCCReference Include="..\LiteCollationVirtual.pas"/>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_2</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_1</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject>
+			<Delphi.Personality>
+				<Source>
+					<Source Name="MainSource">vquery180.dpk</Source>
+				</Source>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Name="MajorVer">11</VersionInfo>
+					<VersionInfo Name="MinorVer">4</VersionInfo>
+					<VersionInfo Name="Release">2</VersionInfo>
+					<VersionInfo Name="Build">0</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Name="FileVersion">11.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName">VirtualDAC</VersionInfoKeys>
+					<VersionInfoKeys Name="ProductVersion">11.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="Comments"/>
+				</VersionInfoKeys>
+			</Delphi.Personality>
+			<Platforms>
+				<Platform value="iOSDevice">True</Platform>
+				<Platform value="iOSSimulator">True</Platform>
+				<Platform value="OSX32">True</Platform>
+				<Platform value="Win32">True</Platform>
+				<Platform value="Win64">True</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+</Project>

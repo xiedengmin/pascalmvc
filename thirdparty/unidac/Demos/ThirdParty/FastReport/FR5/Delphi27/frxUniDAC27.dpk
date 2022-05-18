@@ -1,0 +1,51 @@
+// Package file for Delphi XE7
+
+package frxUniDAC27;
+
+{$I frx.inc}
+
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  VCL,
+  VCLDB,
+  dac270,
+  unidac270,
+  dacvcl270,
+  unidacvcl270,
+  frxDAC27,
+  frx27,
+  frxDB27,
+{$IFDEF QBUILDER}
+  fqb270,
+{$ENDIF}
+  fs27;
+
+contains
+  frxUniDACComponents in '..\frxUniDACComponents.pas',
+  frxUniDACEditor in '..\frxUniDACEditor.pas',
+  frxUniDACRTTI in '..\frxUniDACRTTI.pas';
+
+end.

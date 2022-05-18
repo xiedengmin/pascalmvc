@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -gw3 -gl -l -vewnhibq -Fi/root/a/source/delphisource/pascalmvc/thirdparty/unisuperobject/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.0/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/2.2.0/lcl/units/x86_64-linux -Fu/usr/share/lazarus/2.2.0/components/freetype/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.0/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.0/packager/units/x86_64-linux -Fu/root/a/source/delphisource/pascalmvc/thirdparty/unisuperobject/ -FU/root/a/source/delphisource/pascalmvc/thirdparty/unisuperobject/lib/x86_64-linux/ -FE/root/a/source/delphisource/pascalmvc/thirdparty/unisuperobject/ -o/root/a/source/delphisource/pascalmvc/thirdparty/unisuperobject/project1 -dLCL -dLCLgtk2 project1.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>

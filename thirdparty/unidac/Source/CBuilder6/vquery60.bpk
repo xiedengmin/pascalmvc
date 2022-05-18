@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="vquery60.bpl"/>
+    <OBJFILES value="vquery60.obj CRVirtualConsts.obj CRVirtualData.obj CRVirtualQuery.obj VirtualQuery.obj VirtualDataTypeMap.obj LiteClassesVirtual.obj LiteDataTypeMapVirtual.obj LiteConstsVirtual.obj LiteStaticCallVirtual.obj LiteErrorVirtual.obj LiteParserVirtual.obj LitePropsVirtual.obj LiteFunctionVirtual.obj"/>
+    <RESFILES value="vquery60.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="rtl.lib dbrtl.lib"/>
+    <PACKAGES value="rtl.bpi dbrtl.bpi dac60.bpi"/>
+    <PATHCPP value="."/>
+    <PATHPAS value=".;.."/>
+    <PATHRC value="."/>
+    <PATHASM value="."/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="VIRTUAL_QUERY"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="vquery60.cpp"/>
+    <INCLUDEPATH value="..\;..;..\..\..\Common\Source;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\;..;..\..\..\Common\Source;..\..\..\SQLite\Static;..\..\..\Common\Source\CBuilder6;..\..\Lib\CBuilder6;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -DVIRTUAL_QUERY -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tWM"/>
+    <PFLAGS value="-N2. -N0. -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-l. -I. -D&quot;Devart Virtual Data Access Components&quot; -aa -Tpp -Gpr -x -Gn -Gl -Gi"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0pkg32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="vquery60.res" FORMNAME="" UNITNAME="vquery60.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="vquery60.cpp" FORMNAME="" UNITNAME="vquery60" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\CRVirtualConsts.pas" FORMNAME="" UNITNAME="CRVirtualConsts" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\CRVirtualData.pas" FORMNAME="" UNITNAME="CRVirtualData" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\CRVirtualQuery.pas" FORMNAME="" UNITNAME="CRVirtualQuery" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\VirtualDataTypeMap.pas" FORMNAME="" UNITNAME="VirtualDataTypeMap" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\VirtualQuery.pas" FORMNAME="" UNITNAME="VirtualQuery" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LiteClassesVirtual.pas" FORMNAME="" UNITNAME="LiteClassesVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LiteDataTypeMapVirtual.pas" FORMNAME="" UNITNAME="LiteDataTypeMapVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LiteConstsVirtual.pas" FORMNAME="" UNITNAME="LiteConstsVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LiteCallVirtual.pas" FORMNAME="" UNITNAME="LiteCallVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LiteStaticCallVirtual.pas" FORMNAME="" UNITNAME="LiteStaticCallVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LiteErrorVirtual.pas" FORMNAME="" UNITNAME="LiteErrorVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LiteParserVirtual.pas" FORMNAME="" UNITNAME="LiteParserVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LitePropsVirtual.pas" FORMNAME="" UNITNAME="LitePropsVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LiteFunctionVirtual.pas" FORMNAME="" UNITNAME="LiteFunctionVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\LiteCollationVirtual.pas" FORMNAME="" UNITNAME="LiteCollationVirtual" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\dbrtl.bpi" FORMNAME="" UNITNAME="dbrtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\dac60.bpi" FORMNAME="" UNITNAME="dac60" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=11
+MinorVer=4
+Release=2
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=11.4.2.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=11.4.2.0
+Comments=
+  </IDEOPTIONS>
+</PROJECT>

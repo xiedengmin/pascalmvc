@@ -1,0 +1,532 @@
+<!doctype html public "-//w3c//dtd html 4.0 Transitional//en">
+<html>
+<head>
+  <title>Readme for SecureBridge demo</title>
+  <meta http-equiv="Content-Type" content="text/html">
+<style>
+body {
+  overflow: hidden; 
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background: #ffffff; 
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 70%;
+  width: 100%;
+  }
+p
+	{
+	margin: .5em 0em .5em 0em;
+	}
+ol, ul
+	{
+	margin-top: .5em; 
+	}
+li
+	{
+	margin-bottom: .5em;
+	}
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+blockquote.dxOverload
+	{
+	margin: .5em 1.5em .5em 1.5em;
+	}
+h1, h2, h3, h4
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: .4em; 
+	margin-top: 1em;
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 120%;
+	margin-top: 0em;
+	}
+h2
+	{
+	font-size: 130%;
+	}
+h3
+	{
+	font-size: 115%;
+	}
+h4
+	{
+	font-size: 100%;
+	}
+.dxH1, .dxH2, .dxH3, .dxH4
+	{
+	margin-left: -18px;	
+	}
+A
+  {
+  color: #0000FF;
+  }
+A:link
+  {
+  color: #0000FF;
+  }
+A:active
+  {
+  color: #000080;
+  }
+A:visited
+  {
+  color: #800080;
+  }
+A:hover
+  {
+  color: #FF0000;
+  }
+pre
+  {
+  font-family: Courier New;
+  font-size: 9pt;
+  color: #000060;
+  margin-top: 0px;
+  }
+code, p.example, p.sourcecode, table.sourcecode, tr.sourcecode, td.sourcecode
+  {
+  font-family: Courier New;
+  font-size: 9pt;
+  color: #000060;
+  }
+div#pagetop {
+  margin: 0px;
+  padding: 0px;
+  background-color: #99ccff;   
+  height: 44;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  }
+div#pagebody {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 10px 0px 22px;
+  height: 90%;
+  width: 100%;
+  overflow: auto;
+  background-color: #FFFFFF;
+  vertical-align: top;
+  }
+table#BannerTable
+  {
+  width: 100%;
+  height: 100%;
+  border-collapse:collapse;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+table#BannerTable td
+  {
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+tr#BannerTopRow
+  {
+  font-style: italic;
+  font-size: 70%;
+  }
+tr#BannerTopRow td
+  {
+  padding-top: 4px;
+  }
+tr#Banner2ndRow
+  {
+  font-weight: bold;
+  font-size: 80%;
+  }
+tr#Banner2ndRow td
+  {
+  padding-bottom: 4px;
+  }
+table.filtereditemlisttable, table.xmldoctable
+	{
+	width: 95%; 
+	margin-top: .6em;
+	margin-bottom: .3em;
+	border-width: 1px 1px 0px 0px;
+	border-style: solid;
+	border-color: #999999;
+	background-color: #999999; 
+	font-size: 100%;
+  border-collapse:collapse;
+	}
+table.filtereditemlisttable th, table.filtereditemlisttable td, table.xmldoctable th, table.xmldoctable td
+	{ 
+	border-width: 0px 0px 1px 1px;
+	border-style: solid;
+	border-color: #999999;
+	padding: 4px 6px;
+	text-align: left;
+	vertical-align: top;
+	}
+table.filtereditemlisttable th, table.xmldoctable th
+	{ 
+	background: #cccccc; 
+	vertical-align: bottom;
+	}
+table.filtereditemlisttable td, table.xmldoctable td
+	{
+	background-color: #ffffff;
+	vertical-align: top;
+	}
+
+table.ClassesDescription
+  {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  }
+table.ClassesDescription td
+  {
+  padding: 8px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 80%;
+  }
+tr.ClassesDescriptionTopRow td
+  {
+  background-color: #EEEEFF;
+  font-family: monospace;
+  font-size: 100%;
+  }
+tr.ClassesDescription2ndRow td
+  {
+  padding-left: 30px;
+  border-bottom-width: 2px;
+  }
+
+</style>
+
+<script>
+
+var Engine;
+var enOpera = 'Opera';
+var enIE = 'IE';
+var enGecko = 'Gecko';
+
+function TestEngine()
+{
+  if (document.all) {
+    if (window.opera) {
+      Engine = enOpera;
+    }
+    else {
+      Engine = enIE;
+    }
+  }
+  else {
+    Engine = enGecko;
+  }
+}
+
+
+function AdjustContentSize()
+{
+  var cDiv = document.getElementById("pagebody");
+  if ((Engine == enGecko)||(Engine == enOpera))//amend padding
+    {
+      var w = document.body.clientWidth;
+      cDiv.style.width = w - 32;
+    }
+  var h = document.body.clientHeight;
+  var diff = 44;
+  if ((Engine == enGecko)||(Engine == enOpera)) diff = diff + 6;
+  cDiv.style.height = h - diff;
+}
+
+
+function Startup()
+{
+  //add startup code here
+}
+</script>
+
+</head>
+
+
+<body onresize="AdjustContentSize()" onload="Startup()">
+
+<div id="pagetop">
+  <table id="BannerTable">
+    <tr id="BannerTopRow">
+      <td>SecureBridge demo</td>
+      <td align="right">support@devart.com</td>
+    </tr>
+    <tr id="Banner2ndRow">
+      <td>Readme</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+
+<div id="pagebody">
+<!-- begin content -->
+
+
+<p>
+The demo project demonstrates how to integrate the SecureBridge components with DAC to ensure secure connection to different SQL server through an SSH or SSL. 
+This demo consists of two parts. The first part is a package that contains <a href="#TCRSSHIOHandler">TCRSSHIOHandler</a> and <a href="#TCRSSLIOHandler">TCRSSLIOHandler</a> components. These components provide integration with the <a href="http://www.devart.com/sbridge/" target="_blank">SecureBridge</a> library. The second part is two sample projects that demonstrate how to connect to xSQL server using SSL and SSH protocols, connect to the SSH server with SecureBridge by password or by public key, generate reliable random numbers, enable local port forwarding.
+These projects are located in the Demo\SSL and Demo\SSH subfolders.
+</p>
+
+<p>
+Before opening the demo project, you should compile and install the <i>dacsbridge</i> package containing the TCRSSHIOHandler and TCRSSLIOHandler components. The following instruction will help you to compile and install this package.
+</p>
+
+<h4 class="dxH4">Delphi and C++Builder for Win32</h4>
+<ol>
+  <li>Close all open projects in your IDE.
+  <li>Open the dacsbridgeXX.dpk run-time package (dacsbridgeXX.bpk for C++Builder).
+    <p>Location of this package depends on the version of your IDE:</p>
+      <ul>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi5\ - for Delphi 5 </li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi6\ - for Delphi 6 </li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi7\ - for Delphi 7 </li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi10\ - for Delphi 2006</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi11\ - for Delphi 2007</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi12\ - for Delphi 2009</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi14\ - for Delphi 2010</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi15\ - for Delphi XE</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi16\ - for Delphi XE 2</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi17\ - for Delphi XE 3</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi18\ - for Delphi XE 4</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi19\ - for Delphi XE 5</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi20\ - for Delphi XE 6</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi21\ - for Delphi XE 7</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi22\ - for Delphi XE 8</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi23\ - for Delphi 10 Seattle</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi24\ - for Delphi 10.1 Berlin</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi25\ - for Delphi 10.2 Tokyo</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi26\ - for Delphi 10.3 Rio</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\CBuilder6\ - for C++Builder 6</li>
+      </ul>
+  <li>Compile the package.
+  <p>To make TCRSSHIOHandler and TCRSSLIOHandler components work under Windows x64, Mac OS, iOS simulator, iOS device, Android and 64-bit Linux this step must be repeated for each of these platforms (can be selected in "Target Platforms" of the package).</p>
+  <li>Open the dcldacsbridgeXX.dpk design-time package (dcldacsbridgeXX.bpk for C++Builder).
+    <p>Location of this package depends on the version of your IDE:</p>
+      <ul>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi5\ - for Delphi 5 </li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi6\ - for Delphi 6 </li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi7\ - for Delphi 7 </li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi10\ - for Delphi 2006</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi11\ - for Delphi 2007</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi12\ - for Delphi 2009</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi14\ - for Delphi 2010</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi15\ - for Delphi XE</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi16\ - for Delphi XE 2</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi17\ - for Delphi XE 3</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi18\ - for Delphi XE 4</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi19\ - for Delphi XE 5</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi20\ - for Delphi XE 6</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi21\ - for Delphi XE 7</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi22\ - for Delphi XE 8</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi23\ - for Delphi 10 Seattle</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi24\ - for Delphi 10.1 Berlin</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi25\ - for Delphi 10.2 Tokyo</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\Delphi26\ - for Delphi 10.3 Rio</li>
+        <li>Demos\Win32\TechnologySpecific\SecureBridge\CBuilder6\ - for C++Builder 6</li>
+      </ul>
+  <li>Compile and install the package.
+  <li>Click Tools > Options > Environment Options > Delphi Options > Library. In the Library path field, specify the path to the directory containing the compiled packages.
+</ol>
+
+<br>
+
+<table width="100%"> 
+  <tr>
+    <td width="5%">
+      <img src="images/TCRSSHIOHandler.gif" width="28" height="28" alt="TCRSSHIOHandler" align=middle style="margin-left: 20px">
+    </td>
+    <td width="95%" style="padding-bottom: 8px"> <a name="TCRSSHIOHandler"></a>
+      <h4><font size=2>TCRSSHIOHandler component description</font></h4>
+    </td>
+  </tr>
+</table>  
+<p>
+TCRSSHIOHandler is a component that can be used by DAC to connect to a xSQL server through the secure connection. TCRSSHIOHandler is an implementation of the abstract class TCRIOHandler.
+</p>
+
+<p>
+TCRSSHIOHandler creates a logical connection through an SSH tunnel and represents an interface for data exchange. The physical secure connection is provided by using the SSH Client.
+</p>
+
+<p>
+This component requires the Client property to be set. This property determines the physical connection between SSH client and SSH server that is used for data exchange.
+<br>
+You can set this property at design time by selecting from the list of provided TScSSHClient objects.
+At run time, set the Client property to a reference of an existent TScSSHClient object. TScSSHClient is a component from SecureBridge library.
+</p>
+
+<p>
+<b>Note:</b>
+Do not call methods of TCRSSHIOHandler directly, because they are called by DAC.
+</p>
+
+<p>
+Below you will find descriptions of TCRSSHIOHandler properties.
+</p>
+
+<table class="ClassesDescription">
+  <tr class="ClassesDescriptionTopRow">
+    <td>
+      <b>property</b> Client: TScSSHClient;
+    </td>
+  </tr>
+  <tr class="ClassesDescription2ndRow">
+    <td>
+      Determines the physical connection between SSH client and SSH server that is used for data exchange. To create a logical connection, the Client property must be set.
+      <br>
+      Set this property at design time by selecting from the list of provided TScSSHClient objects.
+      At run time, set the Client property to a reference of an existent TScSSHClient object.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table width="100%"> 
+  <tr>
+    <td width="5%">
+      <img src="images/TCRSSLIOHandler.gif" width="28" height="28" alt="TCRSSLIOHandler" align=middle style="margin-left: 20px">
+    </td>
+    <td width="95%" style="padding-bottom: 8px"> <a name="TCRSSLIOHandler"></a>
+      <h4><font size=2>TCRSSLIOHandler component description</font></h4>
+    </td>
+  </tr>
+</table>  
+<p>
+  The TCRSSLIOHandler is a component that can be used by DAC to connect to a xSQL server through the secure connection. TCRSSLIOHandler is an implementation of the abstract class TCRIOHandler. TCRSSLIOHandler creates a logical connection through the SSL protocol and represents an interface for data exchange.
+</p>
+<p>
+  To protect the current connection with SSL, it is not enough just to link a TCRSSLIOHandler object to the TDAConnection object. You should also set the SSL mode to use SSL. If this option is not set, transferred data will not be encrypted.
+</p>
+<p>
+  This component is similar to TCRSSHIOHandler, but TCRSSLIOHandler requires no client component to be linked to, as functionality of an SSL client is embedded into TCRSSLIOHandler.
+</p>
+<p>
+<b>Note:</b>
+Do not call methods of TCRSSLIOHandler directly, because they are called by DAC.
+</p>
+
+<p>
+Below you will find descriptions of properties, and events of TCRSSLIOHandler (they are similar to ones of TScSSLClient)
+</p>
+
+<table class="ClassesDescription">
+  <tr class="ClassesDescriptionTopRow">
+    <td>
+      <b>property</b> CACertName: <b>string</b>;
+    </td>
+  </tr>
+  <tr class="ClassesDescription2ndRow">
+    <td>
+      Specifies the server CA certificate name that is stored in Storage. CA certificate is used to authenticate the server through SSL. When authenticating an SSL server, from the server comes a certificate that must be signed by the specified CA certificate. If received certificate is not signed by the CA certificate, the Accept parameter will be set to False in the OnServerCertValidate. If the server certificate is signed by the CA certificate, Accept will be set to True in the OnServerCertValidate event.<br/>
+
+      If the certificate with the name specified in the CACertName is not found an exception will be raised.
+    </td>
+  </tr>
+
+  <tr class="ClassesDescriptionTopRow">
+    <td>
+      <b>property</b> CertName: <b>string</b>;
+    </td>
+  </tr>
+  <tr class="ClassesDescription2ndRow">
+    <td>
+      Specifies the client certificate name that is stored in Storage. The client certificate to authenticate the client by the server. It must be signed by CACertName, and must have a private key (TScCertificate.Key.IsPrivate is set True).
+      <br/>
+      If the specified certificate was no found in the storage, and the SSL server requires the client certificate for authentication, secure connection will not be established. 
+      <br/>
+      <b>Note:</b> If CertName is not specified, the certificate is searched by HostName.
+    </td>
+  </tr>
+
+  <tr class="ClassesDescriptionTopRow">
+    <td>
+      <b>property</b> CipherSuites: TScSSLCipherSuites;
+    </td>
+  </tr>
+  <tr class="ClassesDescription2ndRow">
+    <td>
+      The CipherSuites property holds a list of acceptable algorithms that can be used for encrypting and support integrity of the data transferred between the client and the server through a secure connection.
+    </td>
+  </tr>
+
+  <tr class="ClassesDescriptionTopRow">
+    <td>
+      <b>property</b> Storage: TScStorage;
+    </td>
+  </tr>
+  <tr class="ClassesDescription2ndRow">
+    <td>
+      This property is used to access certificate list in the linked storage. If Storage is not assigned, an exception will be raised on connect.
+    </td>
+  </tr>
+
+  <tr class="ClassesDescriptionTopRow">
+    <td>
+      <b>property</b> OnServerCertValidate: TScServerCertValidate;
+    </td>
+  </tr>
+  <tr class="ClassesDescription2ndRow">
+    <td>
+      <b>type</b>
+      <p style="margin-left: 20px">TScServerCertValidate = <b>procedure</b>(Sender: TObject; ServerCertificate: TScCertificate; <b>var</b> Accept: Boolean) <b>of object</b>;</p>
+      
+      <br>
+      Occurs when the server certificate is received from the server.
+      <br>
+      When authenticating an SSL server, from the server comes a certificate that must be signed by the specified CA certificate. If received certificate is not signed by the CA certificate, the Accept parameter will be set to False in the OnServerCertValidate. If the server certificate is signed by the CA certificate, Accept will be set to True in the OnServerCertValidate event. A handler of this event can perform additional verifications to authenticate the server. If you trust the server, set the Accept to True and the connection will be established.
+      <br>
+      <br>
+      <b>Parameters</b>:
+      <table>
+        <tr>
+          <td width="5%" style="border-width: 0;">
+            Sender
+          </td>
+          <td width="95%" style="border-width: 0;">
+            - the object that raised the event;
+          </td>      
+        </tr>
+        <tr>
+          <td style="border-width: 0;">
+            ServerCertificate
+          </td>
+          <td style="border-width: 0;">
+            - the server certificate received from the server;
+          </td>      
+        </tr>
+        <tr>
+          <td style="border-width: 0;">
+            Accept 
+          </td>
+          <td style="border-width: 0;">
+            - when Accept is set to True, the server is considered valid, and the server authentication is successful. When Accept is set to False, the server is considered invalid and the connection is closed.
+          </td>      
+        </tr>      
+      </table>
+    </td>      
+  </tr>      
+</table>
+
+
+<!-- end content -->
+
+<p>&nbsp;</p><p>&nbsp;</p><hr size=1>
+<p>&copy; 1997-2021 Devart. All rights reserved.</p>
+
+</div>
+
+<script>
+TestEngine();
+AdjustContentSize();
+</script>
+</body>
+</html>

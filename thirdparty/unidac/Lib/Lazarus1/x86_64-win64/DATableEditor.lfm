@@ -1,0 +1,45 @@
+inherited DATableEditorForm: TDATableEditorForm
+  Left = 132
+  Top = 174
+  Width = 600
+  Height = 400
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 600
+  BorderIcons = [biSystemMenu]
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+      TabOrder = 1
+    end
+    inherited btCancel: TBitBtn
+      TabOrder = 2
+    end
+    object btnDataEditor: TBitBtn
+      Left = 8
+      Height = 25
+      Top = 8
+      Width = 80
+      Anchors = [akLeft, akBottom]
+      Caption = '&Data Editor...'
+      NumGlyphs = 0
+      OnClick = btnDataEditorClick
+      TabOrder = 0
+    end
+  end
+  inherited PageControl: TPageControl
+    ActivePage = shSQL
+    TabIndex = 0
+    object shSQL: TTabSheet[0]
+      Caption = 'S&QL'
+    end
+    object shDataTypeMap: TTabSheet[1]
+      Caption = '&Data Type Mapping'
+      ImageIndex = 4
+    end
+    object shConditions: TTabSheet[2]
+      Caption = '&Conditions'
+      ImageIndex = 2
+    end
+  end
+end

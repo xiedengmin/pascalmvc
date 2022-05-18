@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="pascalMVC"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="pascalMVC.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.httpserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.HttpServer"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.route.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.Route"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.app.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.App"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="IndexController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.controller.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.config.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mvc.Config"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\maincontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MainController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.Tool"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.json.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.JSON"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tplunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.TplUnit"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tplparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.TplParser"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\Base\basecontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BaseController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.session.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.Session"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.logunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.LogUnit"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.db.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mvc.DB"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.dataset.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.DataSet"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.dbmysql57.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mvc.dbMySql57"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tplparsercool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.TplParsercool"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\IndexService.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\MainService.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\RoleService.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\UserService.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\Map\ServiceMap.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\Map\SQLMap.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\Map\TableMap.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\MVC.Service.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\JwtController.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\PayController.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\RoleController.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\UserController.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\VIPController.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\UpImageController.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\Publish\pascalMVC"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\MVC;..\controller\Base;..\controller;..\thirdparty\superobject;..\..\package\brookframework\Source;..\Service;..\Service\Map;..\thirdparty\fpjwt\src;..\thirdparty\brookframework\brookframework\Source;..\..\package\dcpcrypt-2.0.4.1;..\..\package\dcpcrypt-2.0.4.1\Ciphers;..\..\package\dcpcrypt-2.0.4.1\Hashes"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <Checks>
+        <StackChecks Value="True"/>
+      </Checks>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+      <Item>
+        <Name Value="EHTTPServer"/>
+      </Item>
+      <Item>
+        <Name Value="EWriteError"/>
+      </Item>
+      <Item>
+        <Name Value="EJSON"/>
+      </Item>
+      <Item>
+        <Name Value="EHTTP"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,20 @@
+
+//////////////////////////////////////////////////
+//  DBF Data Access Components
+//  Copyright © 2008-2021 Devart. All right reserved.
+//////////////////////////////////////////////////
+
+{$I Dac.inc}
+
+{$DEFINE UNIDACPRO}
+
+{$IFNDEF NODBFENGINE}
+  {$DEFINE DBFENGINE}         // enable Direct
+{$ENDIF}
+
+{$IFNDEF MOBILE}
+{$IFNDEF NO_ODBC_PROVIDER}
+  {$DEFINE ODBC_PROVIDER}
+{$ENDIF}
+{$ENDIF}
+

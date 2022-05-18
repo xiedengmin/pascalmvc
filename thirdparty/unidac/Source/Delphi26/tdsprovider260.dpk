@@ -1,0 +1,72 @@
+package tdsprovider260;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IFNDEF POSIX}
+{$IMAGEBASE $400000}
+{$ENDIF}
+{$DESCRIPTION 'UniDAC TDS Provider'}
+{$IMPLICITBUILD OFF}
+{$DEFINE UNIDACPRO}
+
+requires
+  rtl,
+  dac260,
+  unidac260;
+
+contains
+  TdsTypesUni in '..\UniProviders\TDS\TdsTypesUni.pas',
+  TdsConstsUni in '..\UniProviders\TDS\TdsConstsUni.pas',
+  TdsNetUni in '..\UniProviders\TDS\TdsNetUni.pas',
+  TdsPacketsUni in '..\UniProviders\TDS\TdsPacketsUni.pas',
+  SqlClassesUni in '..\UniProviders\TDS\SqlClassesUni.pas',
+  TdsProtocolUni in '..\UniProviders\TDS\TdsProtocolUni.pas',
+  TdsSMPProtocolUni in '..\UniProviders\TDS\TdsSMPProtocolUni.pas',
+  TdsClassesUni in '..\UniProviders\TDS\TdsClassesUni.pas',
+  TdsAlgorithmSupportUni in '..\UniProviders\TDS\TdsAlgorithmSupportUni.pas',
+  TdsBridgeUni in '..\UniProviders\TDS\TdsBridgeUni.pas',
+  TdsEC25519Uni in '..\UniProviders\TDS\TdsEC25519Uni.pas',
+  TdsASN1Uni in '..\UniProviders\TDS\TdsASN1Uni.pas',
+  TdsCipherSuitesUni in '..\UniProviders\TDS\TdsCipherSuitesUni.pas',
+  TdsClientHandshakeLayerUni in '..\UniProviders\TDS\TdsClientHandshakeLayerUni.pas',
+  TdsSSLConstsUni in '..\UniProviders\TDS\TdsSSLConstsUni.pas',
+  TdsCertificateConstsUni in '..\UniProviders\TDS\TdsCertificateConstsUni.pas',
+  TdsCertificateExtsUni in '..\UniProviders\TDS\TdsCertificateExtsUni.pas',
+  TdsCryptoAPIIntfUni in '..\UniProviders\TDS\TdsCryptoAPIIntfUni.pas',
+  TdsCryptoAPIStorageUni in '..\UniProviders\TDS\TdsCryptoAPIStorageUni.pas',
+  TdsOidsUni in '..\UniProviders\TDS\TdsOidsUni.pas',
+  TdsLayersUni in '..\UniProviders\TDS\TdsLayersUni.pas',
+  TdsMD5SHA1CSPUni in '..\UniProviders\TDS\TdsMD5SHA1CSPUni.pas',
+  TdsReaderWriterUni in '..\UniProviders\TDS\TdsReaderWriterUni.pas',
+  TdsReceiveBufferUni in '..\UniProviders\TDS\TdsReceiveBufferUni.pas',
+  TdsSSL3HandshakeLayerUni in '..\UniProviders\TDS\TdsSSL3HandshakeLayerUni.pas',
+  TdsSSLMessagesUni in '..\UniProviders\TDS\TdsSSLMessagesUni.pas',
+  TdsSSLExtensionsUni in '..\UniProviders\TDS\TdsSSLExtensionsUni.pas',
+  TdsSSLTypesUni in '..\UniProviders\TDS\TdsSSLTypesUni.pas',
+  TdsTLS1HandshakeLayerUni in '..\UniProviders\TDS\TdsTLS1HandshakeLayerUni.pas',
+  TdsTLS13HandshakeLayerUni in '..\UniProviders\TDS\TdsTLS13HandshakeLayerUni.pas',
+  TdsPipeUni in '..\UniProviders\TDS\TdsPipeUni.pas',
+  TdsThreadUni in '..\UniProviders\TDS\TdsThreadUni.pas',
+  TdsUtilsUni in '..\UniProviders\TDS\TdsUtilsUni.pas';
+
+end.
+

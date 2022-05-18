@@ -1,0 +1,195 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{dbffc441-1519-4cf0-94d0-47f91127a08a}</ProjectGuid>
+		<MainSource>tdsprovider190.dpk</MainSource>
+		<DCC_DependencyCheckOutputName>tdsprovider190.bpl</DCC_DependencyCheckOutputName>
+		<ProjectVersion>15.3</ProjectVersion>
+		<FrameworkType>None</FrameworkType>
+		<Base>True</Base>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+		<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		<TargetedPlatforms>95</TargetedPlatforms>
+		<AppType>Package</AppType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Android' and '$(Base)'=='true') or '$(Base_Android)'!=''">
+		<Base_Android>true</Base_Android>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='iOSDevice' and '$(Base)'=='true') or '$(Base_iOSDevice)'!=''">
+		<Base_iOSDevice>true</Base_iOSDevice>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+		<Base_Win32>true</Base_Win32>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Base)'=='true') or '$(Base_OSX32)'!=''">
+		<Base_OSX32>true</Base_OSX32>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+		<Base_Win64>true</Base_Win64>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Base)'=='true') or '$(Base_iOSSimulator)'!=''">
+		<Base_iOSSimulator>true</Base_iOSSimulator>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+		<Cfg_1>true</Cfg_1>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+		<Cfg_1_Win32>true</Cfg_1_Win32>
+		<CfgParent>Cfg_1</CfgParent>
+		<Cfg_1>true</Cfg_1>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+		<Cfg_2>true</Cfg_2>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<DCC_DependencyCheckOutputName>tdsprovider190.bpl</DCC_DependencyCheckOutputName>
+		<DCC_Description>UniDAC TDS Provider</DCC_Description>
+		<DCC_DcuOutput>..\..\Lib\Delphi19\$(Platform)</DCC_DcuOutput>
+		<DCC_HppOutput>..\..\Include\Delphi19\$(Platform)</DCC_HppOutput>
+		<DCC_UnitSearchPath>..\;..\..\Lib\Delphi19\$(Platform);..\..\..;..\..\..\..\..\Common\Source;..\..\..\..\..\Common\Source\Delphi19;..\..\..\..\..\UniDac\Source\Delphi19;$(BDSCOMMONDIR)\Dcp\$(Platform);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+		<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+		<DCC_Define>UNIDACPRO;$(DCC_Define)</DCC_Define>
+		<DCC_Namespace>System;Data;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+		<GenPackage>true</GenPackage>
+		<DCC_DebugInformation>0</DCC_DebugInformation>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_ResourcePath>..\..\..;..\..\..\..\..\Common\Source;..\..\..\..\..\Common\Source\Delphi19;..\..\..\..\..\UniDac\Source\Delphi19;$(DCC_ResourcePath)</DCC_ResourcePath>
+		<DCC_ObjPath>..\..\..;..\..\..\..\..\Common\Source;..\..\..\..\..\Common\Source\Delphi19;..\..\..\..\..\UniDac\Source\Delphi19;$(DCC_ObjPath)</DCC_ObjPath>
+		<DCC_IncludePath>..\..\..;..\..\..\..\..\Common\Source;..\..\..\..\..\Common\Source\Delphi19;..\..\..\..\..\UniDac\Source\Delphi19;$(DCC_IncludePath)</DCC_IncludePath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_1)'!=''">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>0</DCC_DebugInformation>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_2)'!=''">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>0</DCC_DebugInformation>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="$(MainSource)">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="dac190.dcp"/>
+		<DCCReference Include="unidac190.dcp"/>
+		<DCCReference Include="..\..\Uni\TdsTypesUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsConstsUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsNetUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsPacketsUni.pas"/>
+		<DCCReference Include="..\..\Uni\SqlClassesUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsProtocolUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsSMPProtocolUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsClassesUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsAlgorithmSupportUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsBridgeUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsEC25519Uni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsASN1Uni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsCipherSuitesUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsClientHandshakeLayerUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsSSLConstsUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsCertificateConstsUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsCertificateExtsUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsCryptoAPIIntfUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsCryptoAPIStorageUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsOidsUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsLayersUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsMD5SHA1CSPUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsReaderWriterUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsReceiveBufferUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsSSL3HandshakeLayerUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsSSLMessagesUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsSSLExtensionsUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsSSLTypesUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsTLS1HandshakeLayerUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsTLS13HandshakeLayerUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsPipeUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsThreadUni.pas"/>
+		<DCCReference Include="..\..\Uni\TdsUtilsUni.pas"/>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_2</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_1</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject>
+			<Delphi.Personality>
+				<Parameters/>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Name="MajorVer">8</VersionInfo>
+					<VersionInfo Name="MinorVer">4</VersionInfo>
+					<VersionInfo Name="Release">2</VersionInfo>
+					<VersionInfo Name="Build">0</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Name="FileVersion">8.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName">UniDac</VersionInfoKeys>
+					<VersionInfoKeys Name="ProductVersion">8.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="Comments"/>
+				</VersionInfoKeys>
+				<Source>
+					<Source Name="MainSource">tdsprovider190.dpk</Source>
+				</Source>
+			</Delphi.Personality>
+			<Platforms>
+				<Platform value="Android">True</Platform>
+				<Platform value="iOSDevice">True</Platform>
+				<Platform value="iOSSimulator">True</Platform>
+				<Platform value="OSX32">True</Platform>
+				<Platform value="Win32">True</Platform>
+				<Platform value="Win64">True</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+	<Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>

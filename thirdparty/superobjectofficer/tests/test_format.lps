@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="test_format.dpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="20" Y="9"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\superobject.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="52"/>
+        <CursorPos X="17" Y="123"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\supertimezone.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="61"/>
+        <CursorPos X="32" Y="95"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\supertypes.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="7">
+      <Position>
+        <Filename Value="test_format.dpr"/>
+      </Position>
+      <Position>
+        <Filename Value="test_format.dpr"/>
+      </Position>
+      <Position>
+        <Filename Value="test_format.dpr"/>
+        <Caret Line="9" Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="..\superobject.pas"/>
+        <Caret Line="123" Column="17" TopLine="100"/>
+      </Position>
+      <Position>
+        <Filename Value="test_format.dpr"/>
+        <Caret Line="9" Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="..\superobject.pas"/>
+        <Caret Line="123" Column="17" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="..\supertimezone.pas"/>
+        <Caret Line="92" Column="69" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="..\supertimezone.pas"/>
+        <Caret Line="95" Column="32" TopLine="73"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

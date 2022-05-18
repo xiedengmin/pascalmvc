@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":11966564,"name":"rd_protocol.txtunsupportedparam","sourcebytes":[85,110,115,117,112,112,111,114,116,101,100,32,112,97,114,101,109,116,101,114,32,116,121,112,101,32,40,37,100,41,32,97,116,32,105,110,100,101,120,32,37,100],"value":"Unsupported paremter type (%d) at index %d"},
+{"hash":8578373,"name":"rd_protocol.txtemptycommandwasgiven","sourcebytes":[69,109,112,116,121,32,67,111,109,109,97,110,100,32,119,97,115,32,103,105,118,101],"value":"Empty Command was give"},
+{"hash":184140403,"name":"rd_protocol.txtunabletoconnect","sourcebytes":[85,110,97,98,108,101,32,116,111,32,99,111,110,110,101,99,116,32,116,111,32,37,115,58,37,115],"value":"Unable to connect to %s:%s"},
+{"hash":150654788,"name":"rd_protocol.txtcannotsendcommand","sourcebytes":[85,110,97,98,108,101,32,116,111,32,115,101,110,100,32,99,111,109,109,97,110,100],"value":"Unable to send command"},
+{"hash":11481426,"name":"rd_protocol.txtcannotreadanswer","sourcebytes":[85,110,97,98,108,101,32,116,111,32,114,101,97,100,32,97,110,115,119,101,114],"value":"Unable to read answer"}
+]}

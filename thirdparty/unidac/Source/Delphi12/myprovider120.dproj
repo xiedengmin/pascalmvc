@@ -1,0 +1,160 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{85190b75-f165-4846-96d6-7b54ecbb2661}</ProjectGuid>
+		<MainSource>myprovider120.dpk</MainSource>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		<DCC_DependencyCheckOutputName>myprovider120.bpl</DCC_DependencyCheckOutputName>
+		<ProjectVersion>11.1</ProjectVersion>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_Release)'!=''">
+		<Cfg_Release>true</Cfg_Release>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_Debug)'!=''">
+		<Cfg_Debug>true</Cfg_Debug>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<DCC_DcuOutput>..\..\Lib\Delphi12</DCC_DcuOutput>
+		<DCC_HppOutput>..\..\Include\Delphi12</DCC_HppOutput>
+		<DCC_UnitSearchPath>..\;..\..\Lib\Delphi12;..\..\..\..\..\MyDac\Source</DCC_UnitSearchPath>
+		<DCC_ImageBase>00400000</DCC_ImageBase>
+		<DesignOnlyPackage>false</DesignOnlyPackage>
+		<DCC_DependencyCheckOutputName>myprovider120.bpl</DCC_DependencyCheckOutputName>
+		<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+		<DCC_Define>UNIDACPRO;$(DCC_Define)</DCC_Define>
+		<DCC_WriteableConstants>true</DCC_WriteableConstants>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+		<GenPackage>true</GenPackage>
+		<DCC_DebugInformation>false</DCC_DebugInformation>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_UnitAlias>WinTypes=Borland.Vcl.Windows;WinProcs=Borland.Vcl.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;</DCC_UnitAlias>
+		<DCC_StackSize>4096,1048576</DCC_StackSize>
+		<DCC_ExeOutput>.</DCC_ExeOutput>
+		<DCC_ObjOutput>.</DCC_ObjOutput>
+		<DCC_ResourcePath>..\..\..\..\..\MyDac\Source</DCC_ResourcePath>
+		<DCC_ObjPath>..\..\..\..\..\MyDac\Source</DCC_ObjPath>
+		<DCC_IncludePath>..\..\..\..\..\MyDac\Source</DCC_IncludePath>
+		<DCC_Define>UNIDACPRO;RELEASE</DCC_Define>
+		<DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+		<DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+		<DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+		<DCC_DependencyCheckOutputName>myprovider120.bpl</DCC_DependencyCheckOutputName>
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_ObjOutput>.</DCC_ObjOutput>
+		<DCC_ResourcePath>..\..\..\..\..\MyDac\Source</DCC_ResourcePath>
+		<DCC_ObjPath>..\..\..\..\..\MyDac\Source</DCC_ObjPath>
+		<DCC_IncludePath>..\..\..\..\..\MyDac\Source</DCC_IncludePath>
+		<DCC_Define>UNIDACPRO;DEBUG</DCC_Define>
+		<DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+		<DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+		<DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="myprovider120.dpk">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="dac120.dcp"/>
+		<DCCReference Include="unidac120.dcp"/>
+		<DCCReference Include="..\..\Uni\MyCallUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyClassesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyConnectionPoolUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyConnectionStringUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyConstsUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyPropsUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyParserUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyScriptProcessorUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyServicesUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySqlApiDirectUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySqlApiUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySqlBindUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySqlErrorsUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySqlNetUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyRSAKeyUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySqlResultSetUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySqlSessionUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySqlStmtUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySqlVioPipeUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyDataTypeMapUni.pas"/>
+		<DCCReference Include="..\..\Uni\MySQLGeneratorUni.pas"/>
+		<DCCReference Include="..\..\Uni\MyServerEnumeratorUni.pas"/>
+		<DCCReference Include="..\..\MySQLUniProvider.pas"/>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_Release</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_Debug</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject><BorlandProject>
+				<Delphi.Personality>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">8</VersionInfo>
+						<VersionInfo Name="MinorVer">4</VersionInfo>
+						<VersionInfo Name="Release">2</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">8.4.2.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+						<VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+						<VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">8.4.2.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"></VersionInfoKeys>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">myprovider120.dpk</Source>
+					</Source>
+				</Delphi.Personality>
+			</BorlandProject>
+		</BorlandProject>
+	</ProjectExtensions>
+</Project>

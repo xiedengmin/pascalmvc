@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <Name Value="dbfprovider10"/>
+    <CompilerOptions>
+      <Version Value="8"/>
+      <SearchPaths>
+        <IncludeFiles Value="../;../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/;../../../;../../../../../Common/Source/"/>
+        <OtherUnitFiles Value="../;../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/;../../../;../../../../../Common/Source/;../../;../UniProviders/DBF/"/>
+        <UnitOutputDirectory Value="../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/"/>
+        <ObjectPath Value="../;../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <SyntaxMode Value="Delphi"/>
+          <IncludeAssertionCode Value="True"/>
+        </SyntaxOptions>
+      </Parsing>
+      <CodeGeneration>
+        <Checks>
+          <IOChecks Value="True"/>
+        </Checks>
+        <Optimizations>
+          <OptimizationLevel Value="2"/>
+        </Optimizations>
+      </CodeGeneration>
+      <Linking>
+        <Debugging>
+          <UseLineInfoUnit Value="False"/>
+        </Debugging>
+      </Linking>
+      <Other>
+        <CustomOptions Value="-dUNIDACPRO"/>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="DBF UniDAC Provider"/>
+    <Version Major="8" Minor="4" Release="2" Build="0"/>
+    <Files Count="18">
+      <Item1>
+        <Filename Value="../UniProviders/DBF/DBFUniProvider.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="DBFUniProvider"/>
+      </Item1>
+      <Item2>
+        <Filename Value="../UniProviders/DBF/DBFConstsUni.pas"/>
+        <UnitName Value="DBFConstsUni"/>
+      </Item2>
+      <Item3>
+        <Filename Value="../UniProviders/DBF/DBFStructsUni.pas"/>
+        <UnitName Value="DBFStructsUni"/>
+      </Item3>
+      <Item4>
+        <Filename Value="../UniProviders/DBF/DBFEngineUni.pas"/>
+        <UnitName Value="DBFEngineUni"/>
+      </Item4>
+      <Item5>
+        <Filename Value="../UniProviders/DBF/DBFClassesUni.pas"/>
+        <UnitName Value="DBFClassesUni"/>
+      </Item5>
+      <Item6>
+        <Filename Value="../UniProviders/DBF/DBFConnectionUni.pas"/>
+        <UnitName Value="DBFConnectionUni"/>
+      </Item6>
+      <Item7>
+        <Filename Value="../UniProviders/DBF/DBFPropsUni.pas"/>
+        <UnitName Value="DBFPropsUni"/>
+      </Item7>
+      <Item8>
+        <Filename Value="../UniProviders/DBF/DBFIndexesUni.pas"/>
+        <UnitName Value="DBFIndexesUni"/>
+      </Item8>
+      <Item9>
+        <Filename Value="../UniProviders/DBF/DBFDataTypeMapUni.pas"/>
+        <UnitName Value="DBFDataTypeMapUni"/>
+      </Item9>
+      <Item10>
+        <Filename Value="../UniProviders/DBF/DBFServicesUni.pas"/>
+        <UnitName Value="DBFServicesUni"/>
+      </Item10>
+      <Item11>
+        <Filename Value="../UniProviders/DBF/DBFParserUni.pas"/>
+        <UnitName Value="DBFParserUni"/>
+      </Item11>
+      <Item12>
+        <Filename Value="../UniProviders/DBF/DBFUtilsUni.pas"/>
+        <UnitName Value="DBFUtilsUni"/>
+      </Item12>
+      <Item13>
+        <Filename Value="../UniProviders/DBF/DBFMemosUni.pas"/>
+        <UnitName Value="DBFMemosUni"/>
+      </Item13>
+      <Item14>
+        <Filename Value="../UniProviders/DBF/DBFDBaseUni.pas"/>
+        <UnitName Value="DBFDBaseUni"/>
+      </Item14>
+      <Item15>
+        <Filename Value="../UniProviders/DBF/DBFFoxProUni.pas"/>
+        <UnitName Value="DBFFoxProUni"/>
+      </Item15>
+      <Item16>
+        <Filename Value="../UniProviders/DBF/DBFHiPerSixUni.pas"/>
+        <UnitName Value="DBFHiPerSixUni"/>
+      </Item16>
+      <Item17>
+        <Filename Value="../UniProviders/DBF/DBFConnectionStringUni.pas"/>
+        <UnitName Value="DBFConnectionStringUni"/>
+      </Item17>
+      <Item18>
+        <Filename Value="../UniProviders/DBF/DBFFunctionUni.pas"/>
+        <UnitName Value="DBFFunctionUni"/>
+      </Item18>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="6">
+      <Item1>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="dac10"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="unidac10"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="odbcprovider10"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="vquery10"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="LCL"/>
+      </Item6>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+      <ObjectPath Value="../sqlite3"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

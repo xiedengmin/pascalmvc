@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -gw2 -godwarfsets -gl -l -vewnhibq -Fi/root/a/source/delphisource/lazarusmvc/Project/lib/x86_64-linux -Fu/root/a/source/delphisource/lazarusmvc/MVC -Fu/root/a/source/delphisource/lazarusmvc/Controller -Fu/root/a/source/delphisource/lazarusmvc/Controller/Base -Fu/root/a/source/delphisource/lazarusmvc/Project/ -FU/root/a/source/delphisource/lazarusmvc/Project/lib/x86_64-linux/ -FE/root/a/source/delphisource/lazarusmvc/Publish/ -o/root/a/source/delphisource/lazarusmvc/Publish/MVCDemo MVCDemo.lpr"/>
+</CONFIG>

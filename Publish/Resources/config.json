@@ -1,0 +1,50 @@
+﻿{	
+	"AppTitle":"设备云信息",
+	"Server": {
+		"Port": "8008",
+		"Compress":"deflate",
+		"HTTPQueueLength":1000,
+		"ChildThreadCount":10
+	},
+	"WinService":{
+		"Name":"myMVCService",
+		"DisplayName":"MVC演示Demo服务描述",
+		"ServiceType":"stWin32",
+		"StartType":"stAuto"
+	},	
+	"Config":{
+		"auto_start":true,
+		"APP":"",
+		"session_timer":30,
+		"open_log":true,
+		"open_debug":true,
+		"Corss_Origin":{
+			"Allow_Origin":"*",
+			"Allow_Headers":"*",
+			"Allow_Method":"*",
+			"Allow_Credentials":true
+		},
+		"directory":[
+			{
+				"path":"/view/",
+				"permission":false
+			}
+		]		
+	},
+	"DBConfig":{
+		"db1": {
+			"DriverID": "MySQL",
+			"Server": "127.0.0.1",
+			"Port": "3306",
+			"Database": "pascalmvc",
+			"User_Name": "cool",
+			"Password": "Xdm96600",
+			"CharacterSet": "utf8",
+			"Compress": "False",
+			"Pooled": "True",
+			"POOL_CleanupTimeout": "30000",
+			"POOL_ExpireTimeout": "90000",
+			"POOL_MaximumItems": "50"
+		}
+	}
+}

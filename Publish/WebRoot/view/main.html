@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<title>DelphiWebMVC</title>
+	<#include file="/include.html" />
+	<!--引用了element等类库-->
+</head>
+<style>a{ text-decoration:none}</style>
+<div id="app" style="text-align: center;">
+	<div style="margin-top: 10px;"></div>
+	<image src="/image/logo.jpg" style="width: 250px;height:250px;"></image>
+	<h1>pascalWebMVC</h1>
+	<h1>欢迎大家使用main</h1>
+	<h1>{#message}</h1>
+	<h2>ElementUI</h2>
+    <div style="margin-top: 10px;"></div>
+	<el-button @click="save()" icon="el-icon-search">提交</el-button>
+</div>
+<script>
+new Vue({
+	el:"#app",
+	created(){
+		document.title=this.title
+	},
+	data:{
+		title:"pascalWebMVC"
+	},
+	methods:{
+		save:function(){
+			this.$http.get("getdata").then(function(ret){
+				this.$message({message:ret.body.msg});
+			});
+			
+		}
+	}
+})
+</script>
+
+</html>

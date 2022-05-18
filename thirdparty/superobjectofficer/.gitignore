@@ -1,0 +1,10 @@
+__history/
+__recovery/
+dcu/
+*.dcr
+*.dcu
+*.local
+*.identcache
+*.stat
+*.skincfg
+*.tvsconfig

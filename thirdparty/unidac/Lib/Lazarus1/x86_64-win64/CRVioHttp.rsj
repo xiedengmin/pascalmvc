@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":167345182,"name":"crviohttp.scannotestablishconnection","sourcebytes":[67,97,110,110,111,116,32,101,115,116,97,98,108,105,115,104,32,72,84,84,80,32,99,111,110,110,101,99,116,105,111,110],"value":"Cannot establish HTTP connection"},
+{"hash":75951038,"name":"crviohttp.sinvalidhttpresponse","sourcebytes":[73,110,118,97,108,105,100,32,72,84,84,80,32,115,99,114,105,112,116,32,114,101,115,112,111,110,115,101,32,111,110,32,99,111,110,110,101,99,116,105,111,110],"value":"Invalid HTTP script response on connection"},
+{"hash":29250919,"name":"crviohttp.sinvalidscriptresponse","sourcebytes":[73,110,118,97,108,105,100,32,115,99,114,105,112,116,32,114,101,115,112,111,110,115,101,46,32,70,97,105,108,101,100,32,116,111,32,114,101,97,100,32,115,117,99,99,101,115,115,32,102,108,97,103],"value":"Invalid script response. Failed to read success flag"},
+{"hash":158275874,"name":"crviohttp.sscriptreportederror","sourcebytes":[72,84,84,80,32,115,99,114,105,112,116,32,114,101,112,111,114,116,101,100,32,101,114,114,111,114],"value":"HTTP script reported error"},
+{"hash":96528592,"name":"crviohttp.sunknownerror","sourcebytes":[72,84,84,80,32,115,99,114,105,112,116,32,117,110,107,110,111,119,110,32,101,114,114,111,114,58,32],"value":"HTTP script unknown error: "}
+]}

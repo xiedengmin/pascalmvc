@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="E:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -l -vewnhibq -FiE:\source\delphisource\pascalmvc\thirdparty\fpRedis\lib\x86_64-win64 -FlE:\source\delphisource\pascalmvc\thirdparty\mORMot\static\x86_64-win64 -FuE:\source\delphisource\package\synapse40.1 -FuE:\source\delphisource\pascalmvc\thirdparty\fpRedis\ -FUE:\source\delphisource\pascalmvc\thirdparty\fpRedis\lib\x86_64-win64\ -FEE:\source\delphisource\pascalmvc\thirdparty\fpRedis\ -oE:\source\delphisource\pascalmvc\thirdparty\fpRedis\test_commands.exe test_commands.lpr"/>
+</CONFIG>

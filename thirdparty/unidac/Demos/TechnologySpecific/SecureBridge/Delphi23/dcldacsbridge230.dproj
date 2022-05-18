@@ -1,0 +1,128 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{0847987c-e323-4d62-b606-4d97f9e2dbc4}</ProjectGuid>
+		<MainSource>dcldacsbridge230.dpk</MainSource>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		<DCC_DependencyCheckOutputName>dcldacsbridge230.bpl</DCC_DependencyCheckOutputName>
+		<ProjectVersion>18.0</ProjectVersion>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+		<Base>True</Base>
+		<AppType>Package</AppType>
+		<FrameworkType>VCL</FrameworkType>
+		<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		<TargetedPlatforms>1</TargetedPlatforms>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_Release)'!=''">
+		<Cfg_Release>true</Cfg_Release>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_Debug)'!=''">
+		<Cfg_Debug>true</Cfg_Debug>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<DCC_DcuOutput>.\Delphi23\$(Platform)\$(Config)</DCC_DcuOutput>
+		<DCC_DcpOutput></DCC_DcpOutput>
+		<DCC_DependencyCheckOutputName>dcldacsbridge230.bpl</DCC_DependencyCheckOutputName>
+		<DCC_ImageBase>00400000</DCC_ImageBase>
+		<DesignOnlyPackage>true</DesignOnlyPackage>
+		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+		<VerInfo_Build>1</VerInfo_Build>
+		<VerInfo_Keys>CompanyName=Devart;FileDescription=;FileVersion=1.0.0.1;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=SecureBridge;ProductVersion=1.0.0.1</VerInfo_Keys>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+		<DCC_UnitSearchPath>..\;.\Delphi23\$(Platform)\$(Config);..\Design;$(DELPHI)\Lib\$(Platform)\$(Config);$(DELPHI)\source\ToolsAPI\;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+		<DCC_ResourcePath>..\;..\Design;$(DELPHI)\source\ToolsAPI\;$(DCC_ResourcePath)</DCC_ResourcePath>
+		<DCC_ObjPath>..\;..\Design;$(DELPHI)\source\ToolsAPI\;$(DCC_ObjPath)</DCC_ObjPath>
+		<DCC_IncludePath>..\;..\Design;$(DELPHI)\source\ToolsAPI\;$(DCC_IncludePath)</DCC_IncludePath>
+		<DCC_Description>Devart SecureBridge Components for Data Access Components</DCC_Description>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+		<GenPackage>true</GenPackage>
+		<DCC_WriteableConstants>true</DCC_WriteableConstants>
+		<DCC_DebugInformation>0</DCC_DebugInformation>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<Version>7.0</Version>
+		<DCC_DebugInformation>0</DCC_DebugInformation>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+		<Version>7.0</Version>
+		<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="$(MainSource)">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="dacsbridge230.dcp"/>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="vcl.dcp"/>
+		<DCCReference Include="designide.dcp"/>
+		<DCCReference Include="..\Design\CRIOHandlerReg.pas"/>
+		<DCCReference Include="..\Design\CRIOHandlerDesign.pas"/>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_Release</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_Debug</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+	<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject>
+			<Delphi.Personality>
+				<Parameters/>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Name="MajorVer">1</VersionInfo>
+					<VersionInfo Name="MinorVer">0</VersionInfo>
+					<VersionInfo Name="Release">0</VersionInfo>
+					<VersionInfo Name="Build">1</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Name="FileVersion">1.0.0.1</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName">SecureBridge</VersionInfoKeys>
+					<VersionInfoKeys Name="ProductVersion">1.0.0.1</VersionInfoKeys>
+				</VersionInfoKeys>
+				<Source>
+					<Source Name="MainSource">dcldacsbridge230.dpk</Source>
+				</Source>
+			</Delphi.Personality>
+			<Platforms>
+				<Platform value="Win32">True</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+</Project>

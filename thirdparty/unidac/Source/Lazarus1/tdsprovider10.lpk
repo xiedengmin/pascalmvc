@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="tdsprovider10"/>
+    <Type Value="RunAndDesignTime"/>
+    <AddToProjectUsesSection Value="True"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <IncludeFiles Value="..;../lib/$(TargetCPU)-$(TargetOS);../../../;../../../../../Common/Source/"/>
+        <OtherUnitFiles Value="..;../lib/$(TargetCPU)-$(TargetOS);../../../;../../../../../Common/Source/;../../;../UniProviders/TDS/"/>
+        <UnitOutputDirectory Value="../../Lib/Lazarus1/$(TargetCPU)-$(TargetOS)/"/>
+        <ObjectPath Value="..;../lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <SyntaxMode Value="Delphi"/>
+          <IncludeAssertionCode Value="True"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <CodeGeneration>
+        <Checks>
+          <IOChecks Value="True"/>
+        </Checks>
+        <Optimizations>
+          <OptimizationLevel Value="2"/>
+        </Optimizations>
+      </CodeGeneration>
+      <Linking>
+        <Debugging>
+          <GenerateDebugInfo Value="False"/>
+          <UseLineInfoUnit Value="False"/>
+        </Debugging>
+      </Linking>
+      <Other>
+        <CustomOptions Value="-dUNIDACPRO"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="TDS UniDAC Provider"/>
+    <Version Major="8" Minor="4" Release="2" Build="0"/>
+    <Files Count="29">
+      <Item1>
+        <Filename Value="../UniProviders/TDS/TdsAlgorithmSupportUni.pas"/>
+        <UnitName Value="TdsAlgorithmSupportUni"/>
+      </Item1>
+      <Item2>
+        <Filename Value="../UniProviders/TDS/TdsBridgeUni.pas"/>
+        <UnitName Value="TdsBridgeUni"/>
+      </Item2>
+      <Item3>
+        <Filename Value="../UniProviders/TDS/TdsEC25519Uni.pas"/>
+        <UnitName Value="TdsEC25519Uni"/>
+      </Item3>
+      <Item4>
+        <Filename Value="../UniProviders/TDS/TdsASN1Uni.pas"/>
+        <UnitName Value="TdsASN1Uni"/>
+      </Item4>
+      <Item5>
+        <Filename Value="../UniProviders/TDS/TdsCipherSuitesUni.pas"/>
+        <UnitName Value="TdsCipherSuitesUni"/>
+      </Item5>
+      <Item6>
+        <Filename Value="../UniProviders/TDS/TdsClassesUni.pas"/>
+        <UnitName Value="TdsClassesUni"/>
+      </Item6>
+      <Item7>
+        <Filename Value="../UniProviders/TDS/TdsClientHandshakeLayerUni.pas"/>
+        <UnitName Value="TdsClientHandshakeLayerUni"/>
+      </Item7>
+      <Item8>
+        <Filename Value="../UniProviders/TDS/TdsConstsUni.pas"/>
+        <UnitName Value="TdsConstsUni"/>
+      </Item8>
+      <Item9>
+        <Filename Value="../UniProviders/TDS/TdsCertificateConstsUni.pas"/>
+        <UnitName Value="TdsCertificateConstsUni"/>
+      </Item9>
+      <Item10>
+        <Filename Value="../UniProviders/TDS/TdsOidsUni.pas"/>
+        <UnitName Value="TdsOidsUni"/>
+      </Item10>
+      <Item11>
+        <Filename Value="../UniProviders/TDS/TdsLayersUni.pas"/>
+        <UnitName Value="TdsLayersUni"/>
+      </Item11>
+      <Item12>
+        <Filename Value="../UniProviders/TDS/TdsMD5SHA1CSPUni.pas"/>
+        <UnitName Value="TdsMD5SHA1CSPUni"/>
+      </Item12>
+      <Item13>
+        <Filename Value="../UniProviders/TDS/TdsNetUni.pas"/>
+        <UnitName Value="TdsNetUni"/>
+      </Item13>
+      <Item14>
+        <Filename Value="../UniProviders/TDS/TdsPacketsUni.pas"/>
+        <UnitName Value="TdsPacketsUni"/>
+      </Item14>
+      <Item15>
+        <Filename Value="../UniProviders/TDS/TdsProtocolUni.pas"/>
+        <UnitName Value="TdsProtocolUni"/>
+      </Item15>
+      <Item16>
+        <Filename Value="../UniProviders/TDS/TdsReaderWriterUni.pas"/>
+        <UnitName Value="TdsReaderWriterUni"/>
+      </Item16>
+      <Item17>
+        <Filename Value="../UniProviders/TDS/TdsReceiveBufferUni.pas"/>
+        <UnitName Value="TdsReceiveBufferUni"/>
+      </Item17>
+      <Item18>
+        <Filename Value="../UniProviders/TDS/TdsSSL3HandshakeLayerUni.pas"/>
+        <UnitName Value="TdsSSL3HandshakeLayerUni"/>
+      </Item18>
+      <Item19>
+        <Filename Value="../UniProviders/TDS/TdsSSLConstsUni.pas"/>
+        <UnitName Value="TdsSSLConstsUni"/>
+      </Item19>
+      <Item20>
+        <Filename Value="../UniProviders/TDS/TdsSSLMessagesUni.pas"/>
+        <UnitName Value="TdsSSLMessagesUni"/>
+      </Item20>
+      <Item21>
+        <Filename Value="../UniProviders/TDS/TdsSSLTypesUni.pas"/>
+        <UnitName Value="TdsSSLTypesUni"/>
+      </Item21>
+      <Item22>
+        <Filename Value="../UniProviders/TDS/TdsTLS1HandshakeLayerUni.pas"/>
+        <UnitName Value="TdsTLS1HandshakeLayerUni"/>
+      </Item22>
+      <Item23>
+        <Filename Value="../UniProviders/TDS/TdsTLS13HandshakeLayerUni.pas"/>
+        <UnitName Value="TdsTLS13HandshakeLayerUni"/>
+      </Item23>
+      <Item24>
+        <Filename Value="../UniProviders/TDS/TdsTypesUni.pas"/>
+        <UnitName Value="TdsTypesUni"/>
+      </Item24>
+      <Item25>
+        <Filename Value="../UniProviders/TDS/TdsCertificateExtsUni.pas"/>
+        <UnitName Value="TdsCertificateExtsUni"/>
+      </Item25>
+      <Item26>
+        <Filename Value="../UniProviders/TDS/TdsCryptoAPIIntfUni.pas"/>
+        <UnitName Value="TdsCryptoAPIIntfUni"/>
+      </Item26>
+      <Item27>
+        <Filename Value="../UniProviders/TDS/TdsCryptoAPIStorageUni.pas"/>
+        <UnitName Value="TdsCryptoAPIStorageUni"/>
+      </Item27>
+      <Item28>
+        <Filename Value="../UniProviders/TDS/TdsUtilsUni.pas"/>
+        <UnitName Value="TdsUtilsUni"/>
+      </Item28>
+      <Item29>
+        <Filename Value="../UniProviders/TDS/TdsSSLExtensionsUni.pas"/>
+        <UnitName Value="TdsSSLExtensionsUni"/>
+      </Item29>
+    </Files>
+    <RequiredPkgs Count="4">
+      <Item1>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="dac10"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="unidac10"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

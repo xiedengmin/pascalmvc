@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":58265422,"name":"brookhttpserver.sbrookactiveserver","sourcebytes":[65,99,116,105,118,101,32,115,101,114,118,101,114,46],"value":"Active server."},
+{"hash":202437470,"name":"brookhttpserver.sbrookcannotcreateserverhandle","sourcebytes":[67,97,110,110,111,116,32,99,114,101,97,116,101,32,115,101,114,118,101,114,32,104,97,110,100,108,101,46],"value":"Cannot create server handle."},
+{"hash":148847331,"name":"brookhttpserver.sbrooktlsnotavailable","sourcebytes":[84,76,83,32,105,115,32,110,111,116,32,97,118,97,105,108,97,98,108,101,46,32,80,108,101,97,115,101,32,100,111,119,110,108,111,97,100,32,116,104,101,32,83,97,103,117,105,32,108,105,98,114,97,114,121,32,119,105,116,104,32,84,76,83,32,115,117,112,112,111,114,116,32,97,116,58,32,104,116,116,112,115,58,47,47,103,105,116,104,117,98,46,99,111,109,47,114,105,115,111,102,108,111,114,97,47,108,105,98,115,97,103,117,105,47,114,101,108,101,97,115,101,115],"value":"TLS is not available. Please download the Sagui library with TLS support at: https:\/\/github.com\/risoflora\/libsagui\/releases"},
+{"hash":66821038,"name":"brookhttpserver.sbrookemptyprivatekey","sourcebytes":[80,114,105,118,97,116,101,32,107,101,121,32,99,97,110,110,111,116,32,98,101,32,101,109,112,116,121,46],"value":"Private key cannot be empty."},
+{"hash":57467054,"name":"brookhttpserver.sbrookemptycertificate","sourcebytes":[67,101,114,116,105,102,105,99,97,116,101,32,99,97,110,110,111,116,32,98,101,32,101,109,112,116,121,46],"value":"Certificate cannot be empty."}
+]}

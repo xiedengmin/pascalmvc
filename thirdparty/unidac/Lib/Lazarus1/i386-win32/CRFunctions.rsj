@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":16816980,"name":"crfunctions.sdateencodeerror","sourcebytes":[73,110,118,97,108,105,100,32,100,97,116,101,32,102,111,114,109,97,116],"value":"Invalid date format"},
+{"hash":113226868,"name":"crfunctions.scannotcreateevent","sourcebytes":[67,97,110,110,111,116,32,99,114,101,97,116,101,32,101,118,101,110,116,58,13,10,37,115,46,13,10,69,114,114,111,114,32,67,111,100,101,58,32,37,100],"value":"Cannot create event:\r\n%s.\r\nError Code: %d"}
+]}

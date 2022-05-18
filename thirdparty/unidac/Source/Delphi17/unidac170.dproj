@@ -1,0 +1,129 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{ea9ec1ce-8ace-4bc6-9d70-dfee1626f110}</ProjectGuid>
+		<MainSource>unidac170.dpk</MainSource>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		<DCC_DependencyCheckOutputName>unidac170.bpl</DCC_DependencyCheckOutputName>
+		<ProjectVersion>13.4</ProjectVersion>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+		<Base>True</Base>
+		<AppType>Package</AppType>
+		<FrameworkType>None</FrameworkType>
+		<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		<TargetedPlatforms>7</TargetedPlatforms>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_Release)'!=''">
+		<Cfg_Release>true</Cfg_Release>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_Debug)'!=''">
+		<Cfg_Debug>true</Cfg_Debug>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<DCC_DcuOutput>..\..\Lib\Delphi17\$(Platform)</DCC_DcuOutput>
+		<DCC_HppOutput>..\..\Include\Delphi17\$(Platform)</DCC_HppOutput>
+		<DCC_UnitSearchPath>..\..\..\Common\Source;..\..\Lib\Delphi17\$(Platform);..\;$(BDSCOMMONDIR)\Dcp\$(Platform);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+		<DCC_ResourcePath>..\..\..\Common\Source;..\;$(DCC_ResourcePath)</DCC_ResourcePath>
+		<DCC_ObjPath>..\..\..\Common\Source;..\;$(DCC_ObjPath)</DCC_ObjPath>
+		<DCC_IncludePath>..\..\..\Common\Source;..\;$(DCC_IncludePath)</DCC_IncludePath>
+		<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+		<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+		<DCC_DependencyCheckOutputName>unidac170.bpl</DCC_DependencyCheckOutputName>
+		<DCC_Define>UNIDAC;$(DCC_Define)</DCC_Define>
+		<DCC_Description>Devart Universal Data Access Components</DCC_Description>
+		<GenPackage>true</GenPackage>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+		<Version>7.0</Version>
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+		<Version>7.0</Version>
+		<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="$(MainSource)">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="dac170.dcp"/>
+		<DCCReference Include="..\UniProvider.pas"/>
+		<DCCReference Include="..\Uni.pas"/>
+		<DCCReference Include="..\UniConsts.pas"/>
+		<DCCReference Include="..\UniScript.pas"/>
+		<DCCReference Include="..\UniLoader.pas"/>
+		<DCCReference Include="..\UniDump.pas"/>
+		<DCCReference Include="..\UniAlerter.pas"/>
+		<DCCReference Include="..\UniSQLMonitor.pas"/>
+		<DCCReference Include="..\UniConnectionString.pas"/>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_Release</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_Debug</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+	<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject>
+			<Delphi.Personality>
+				<Parameters/>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Name="MajorVer">8</VersionInfo>
+					<VersionInfo Name="MinorVer">4</VersionInfo>
+					<VersionInfo Name="Release">2</VersionInfo>
+					<VersionInfo Name="Build">0</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Name="FileVersion">8.4.2.0</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName">UniDac</VersionInfoKeys>
+					<VersionInfoKeys Name="ProductVersion">8.4.2.0</VersionInfoKeys>
+				</VersionInfoKeys>
+				<Source>
+					<Source Name="MainSource">unidac170.dpk</Source>
+				</Source>
+			</Delphi.Personality>
+			<Platforms>
+				<Platform value="Win64">True</Platform>
+				<Platform value="Win32">True</Platform>
+				<Platform value="OSX32">True</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+</Project>
