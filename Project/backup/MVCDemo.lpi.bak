@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="LazarusMVC"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <Units>
+      <Unit>
+        <Filename Value="MVCDemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.httpserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.HttpServer"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.route.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.Route"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.app.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.App"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="IndexController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.controller.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.config.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mvc.Config"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\maincontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MainController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.Tool"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.json.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mvc.JSON"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tplunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.TplUnit"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tplparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.TplParser"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Controller\Base\basecontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BaseController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.session.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.Session"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.logunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.LogUnit"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.db.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mvc.DB"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.dataset.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.DataSet"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.dbmysql57.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="mvc.dbMySql57"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\Publish\MVCDemo"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\MVC;..\Controller;..\Controller\Base;..\..\package\brookframework\Source"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+      <Item>
+        <Name Value="EHTTPServer"/>
+      </Item>
+      <Item>
+        <Name Value="EWriteError"/>
+      </Item>
+      <Item>
+        <Name Value="EJSON"/>
+      </Item>
+      <Item>
+        <Name Value="EHTTP"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="E:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1411537227"/>
+  <Params Value=" -Pi386 -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -l -vewnhibq -Fie:\source\delphisource\lazarusmvc\Project\lib\i386-win64 -Fue:\source\delphisource\lazarusmvc\MVC -Fue:\source\delphisource\lazarusmvc\Controller -Fue:\source\delphisource\lazarusmvc\Controller\Base -Fue:\source\delphisource\lazarusmvc\Project\ -FUe:\source\delphisource\lazarusmvc\Project\lib\i386-win64\ -FEe:\source\delphisource\lazarusmvc\Publish\ -oe:\source\delphisource\lazarusmvc\Publish\MVCDemo.exe MVCDemo.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>

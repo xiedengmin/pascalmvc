@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":187377566,"name":"brookhttpresponse.sbrookinvalidhttpstatus","sourcebytes":[73,110,118,97,108,105,100,32,115,116,97,116,117,115,32,99,111,100,101,58,32,37,100,46],"value":"Invalid status code: %d."},
+{"hash":169945374,"name":"brookhttpresponse.sbrookresponsealreadysent","sourcebytes":[82,101,115,112,111,110,115,101,32,97,108,114,101,97,100,121,32,115,101,110,116,46],"value":"Response already sent."},
+{"hash":240284094,"name":"brookhttpresponse.sbrookzliberror","sourcebytes":[71,101,110,101,114,105,99,32,90,76,105,98,32,101,114,114,111,114,46],"value":"Generic ZLib error."}
+]}

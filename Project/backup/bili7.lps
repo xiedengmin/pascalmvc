@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="bili7.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="17" Y="10"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="IndexController"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="53"/>
+        <CursorPos X="71" Y="71"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\maincontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MainController"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\Base\basecontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BaseController"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="35" Y="205"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\IndexService.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="17"/>
+        <TopLine Value="13"/>
+        <CursorPos X="50" Y="24"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\MainService.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="63" Y="6"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\RoleService.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="28"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\UserService.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="31"/>
+        <CursorPos X="14" Y="12"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\Map\ServiceMap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="7"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\Map\SQLMap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="26" Y="9"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Service\Map\TableMap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\JwtController.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="121"/>
+        <CursorPos X="36" Y="144"/>
+        <UsageCount Value="213"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\PayController.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="29" Y="17"/>
+        <UsageCount Value="213"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\RoleController.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="35" Y="25"/>
+        <UsageCount Value="213"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\UserController.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="26"/>
+        <CursorPos X="24" Y="68"/>
+        <UsageCount Value="213"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\VIPController.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="213"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\UpImageController.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6"/>
+        <CursorPos Y="39"/>
+        <UsageCount Value="215"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\model\MVCModel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="5" Y="29"/>
+        <UsageCount Value="102"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.app.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MVC.App"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="19" Y="6"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.config.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.controller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.dataset.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.db.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.dbmysql56.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.dbmysql57.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.dbsqlite.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.httpserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.json.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.logunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.query.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.regexpr.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.route.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.session.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.tool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.tplparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.tplparsercool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\mvc.tplunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\MVC.JWT.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\MVC.Service.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\regexprex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.httpserver.pas"/>
+        <UnitName Value="MVC.HttpServer"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos Y="69"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.route.pas"/>
+        <UnitName Value="MVC.Route"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="171"/>
+        <CursorPos Y="188"/>
+        <UsageCount Value="205"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.app.pas"/>
+        <UnitName Value="MVC.App"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="104" Y="92"/>
+        <UsageCount Value="205"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.controller.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="542"/>
+        <CursorPos Y="563"/>
+        <UsageCount Value="201"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.config.pas"/>
+        <UnitName Value="mvc.Config"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="130"/>
+        <CursorPos X="10" Y="149"/>
+        <UsageCount Value="201"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tool.pas"/>
+        <UnitName Value="MVC.Tool"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="228"/>
+        <CursorPos X="10" Y="397"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.json.pas"/>
+        <UnitName Value="MVC.JSON"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="3" Y="13"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tplunit.pas"/>
+        <UnitName Value="MVC.TplUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="72"/>
+        <CursorPos X="18" Y="187"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tplparser.pas"/>
+        <UnitName Value="MVC.TplParser"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="188"/>
+        <CursorPos Y="210"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.session.pas"/>
+        <UnitName Value="MVC.Session"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="400"/>
+        <CursorPos Y="398"/>
+        <UsageCount Value="202"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.logunit.pas"/>
+        <UnitName Value="MVC.LogUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="16" Y="41"/>
+        <UsageCount Value="202"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.db.pas"/>
+        <UnitName Value="mvc.DB"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="9" Y="10"/>
+        <UsageCount Value="201"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.dataset.pas"/>
+        <UnitName Value="MVC.DataSet"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="601"/>
+        <CursorPos X="57" Y="665"/>
+        <UsageCount Value="202"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.dbmysql57.pas"/>
+        <UnitName Value="mvc.dbMySql57"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="418"/>
+        <CursorPos Y="443"/>
+        <UsageCount Value="206"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.tplparsercool.pas"/>
+        <UnitName Value="MVC.TplParsercool"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="153"/>
+        <CursorPos X="95" Y="539"/>
+        <UsageCount Value="200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\MVC.Service.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="40" Y="13"/>
+        <UsageCount Value="201"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\mvc.dbmysql56.pas"/>
+        <UnitName Value="mvc.dbMySql56"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2"/>
+        <CursorPos X="19" Y="31"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\brookframework\Source\BrookHTTPResponse.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="315"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\brookframework\Source\BrookHTTPRequest.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="285"/>
+        <CursorPos X="27" Y="315"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\brookframework\Source\BrookHTTPServer.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1013"/>
+        <CursorPos Y="1030"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\brookframework\Source\BrookUtility.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="45" Y="42"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpc\3.2.2\source\packages\fcl-json\src\fpjson.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="160"/>
+        <CursorPos X="14" Y="178"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpc\3.2.2\source\packages\regexpr\src\regexpr.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="62"/>
+        <CursorPos X="55" Y="80"/>
+        <UsageCount Value="40"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpc\3.2.2\source\packages\regexpr\src\uregexpr.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="55"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\regexprex.pas"/>
+        <UnitName Value="RegExprEx"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="18"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\superobject\superobject.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="120"/>
+        <CursorPos X="45" Y="135"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\lcl\include\lclintf.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="162"/>
+        <CursorPos Y="182"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpc\3.2.2\source\packages\rtl-generics\src\generics.collections.pas"/>
+        <UnitName Value="Generics.Collections"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1421"/>
+        <CursorPos Y="1439"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\brookframework\Source\BrookHTTPUploads.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="241"/>
+        <CursorPos Y="261"/>
+        <UsageCount Value="3"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\MVC\MVC.JWT.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="54" Y="7"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpc\3.2.2\source\rtl\inc\ustringh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="114"/>
+        <CursorPos X="22" Y="141"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\fpjwt\src\fp.jwt.core.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="20" Y="19"/>
+        <UsageCount Value="14"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\fpjwt\src\fp.jwt.claims.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="166"/>
+        <CursorPos Y="114"/>
+        <UsageCount Value="15"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpc\3.2.2\source\rtl\inc\wstringh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="10" Y="41"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpc\3.2.2\source\packages\fcl-base\src\base64.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <CursorPos X="28" Y="90"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\Indy10\Protocols\IdURI.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="395"/>
+        <CursorPos X="76" Y="629"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\brookframework\Source\libsagui.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="905"/>
+        <CursorPos X="22" Y="913"/>
+        <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\usr\share\fpcsrc\3.2.2\packages\rtl-generics\src\generics.collections.pas"/>
+        <UnitName Value="Generics.Collections"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1173"/>
+        <CursorPos X="20" Y="1186"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpc\3.2.2\source\packages\fcl-web\src\base\fpmimetypes.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="157"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\fpjwt\src\fp.jwt.utils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9"/>
+        <CursorPos X="5" Y="9"/>
+        <UsageCount Value="24"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\usr\share\lazarus\2.3.0\fpcsrc\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1403"/>
+        <CursorPos X="3" Y="1188"/>
+        <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\lazarus\lcl\interfaces\fpgui\fpguicrosshelpers.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="10"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\lazarus\lcl\interfaces\gtk\gtkdefines.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="61"/>
+        <CursorPos X="6" Y="79"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\rtl\inc\dynlibs.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="23" Y="30"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\rtl\inc\dynlibh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos X="10" Y="49"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\rtl\inc\dynlib.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="62"/>
+        <CursorPos Y="87"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\packages\fcl-base\src\syncobjs.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="30" Y="37"/>
+        <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="254"/>
+        <CursorPos X="36" Y="267"/>
+        <UsageCount Value="2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\usr\share\lazarus\2.3.0\fpcsrc\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="195"/>
+        <CursorPos X="23" Y="208"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\mormot.defines.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="116"/>
+        <CursorPos X="6" Y="135"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\db\mormot.db.sql.zeos.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="803"/>
+        <CursorPos Y="821"/>
+        <UsageCount Value="24"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\zeosdbo\src\dbc\ZDbcIntfs.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos X="47" Y="66"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\db\mormot.db.sql.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3573"/>
+        <CursorPos Y="3592"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\brookframework\brookframework\Source\libsagui.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="980"/>
+        <CursorPos X="92" Y="986"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\zeosdbo\src\dbc\ZDbcMySqlUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="292"/>
+        <CursorPos Y="308"/>
+        <UsageCount Value="45"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\orm\mormot.orm.core.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="539"/>
+        <CursorPos X="42" Y="556"/>
+        <UsageCount Value="15"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\core\mormot.core.os.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="275"/>
+        <CursorPos X="5" Y="291"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\zeosdbo\src\dbc\ZDbcMySql.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="337"/>
+        <CursorPos Y="355"/>
+        <UsageCount Value="43"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\rest\mormot.rest.core.pas"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="706"/>
+        <CursorPos X="14" Y="723"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\orm\mormot.orm.base.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9804"/>
+        <CursorPos Y="9822"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\rtl\objpas\sysutils\sysutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="243"/>
+        <CursorPos X="4" Y="261"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\rtl\objpas\sysutils\sysutils.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="701"/>
+        <CursorPos X="17" Y="722"/>
+        <UsageCount Value="7"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\db\mormot.db.raw.sqlite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5658"/>
+        <CursorPos Y="5677"/>
+        <UsageCount Value="26"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\brookframework\brookframework\Source\BrookHTTPServer.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="9" Y="38"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\rest\mormot.rest.server.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1682"/>
+        <CursorPos X="24" Y="1708"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\rest\mormot.rest.sqlite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="29" Y="59"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="150"/>
+        <CursorPos X="3" Y="169"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\core\mormot.core.base.pas"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="51"/>
+        <CursorPos X="3" Y="178"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="539"/>
+        <CursorPos X="3" Y="558"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\packages\fcl-base\src\contnrs.pp"/>
+        <UnitName Value="Contnrs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="55"/>
+        <CursorPos X="26" Y="74"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\core\mormot.core.interfaces.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="922"/>
+        <CursorPos X="3" Y="788"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\orm\mormot.orm.rest.pas"/>
+        <EditorIndex Value="15"/>
+        <TopLine Value="1413"/>
+        <CursorPos Y="1444"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\orm\mormot.orm.server.pas"/>
+        <EditorIndex Value="16"/>
+        <TopLine Value="1002"/>
+        <CursorPos Y="1029"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\package\mORMot2\src\orm\mormot.orm.sql.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1339"/>
+        <CursorPos Y="1371"/>
+        <UsageCount Value="13"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Publish\WebRoot\view\index.html"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="152"/>
+        <CursorPos X="33" Y="152"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="HTML"/>
+      </Unit>
+      <Unit>
+        <Filename Value="E:\lazarus\fpcsrc\packages\fcl-json\src\fpjson.pp"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\fpjwt\src\fp.jwt.verify.pas"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="115"/>
+        <CursorPos Y="147"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="24"/>
+        <CursorPos X="17" Y="40"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookString.pas"/>
+        <EditorIndex Value="7"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookStringMap.pas"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="18"/>
+        <CursorPos X="20" Y="28"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookDefines.inc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\thirdparty\mORMot2\src\mormot.uses.inc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\core\MVC.service.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="28">
+      <Position>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <Caret Line="72" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <Caret Line="73" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <Caret Line="75" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <Caret Line="76" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <Caret Line="77" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <Caret Line="78" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <Caret Line="79" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="..\controller\indexcontroller.pas"/>
+        <Caret Line="71" Column="71" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="45" Column="51" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="42" Column="3" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="51" Column="74" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="41" Column="11" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="42" Column="15" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="32" Column="85" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="42" Column="3" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="54" Column="73" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="41" Column="37" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="42" Column="3" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="bili7.lpr"/>
+        <Caret Line="23" Column="15"/>
+      </Position>
+      <Position>
+        <Filename Value="bili7.lpr"/>
+        <Caret Line="24" Column="92"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="30" Column="9" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\brookframework\Source\BrookHTTPRequest.pas"/>
+        <Caret Line="65" Column="25" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="bili7.lpr"/>
+        <Caret Line="10" Column="17"/>
+      </Position>
+      <Position>
+        <Filename Value="..\core\mvc.app.pas"/>
+        <Caret Line="6" Column="19"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\superobject\superobject.pas"/>
+        <Caret Line="133" Column="18" TopLine="120"/>
+      </Position>
+      <Position>
+        <Filename Value="..\thirdparty\superobject\superobject.pas"/>
+        <Caret Line="135" Column="45" TopLine="120"/>
+      </Position>
+      <Position>
+        <Filename Value="..\Service\MainService.pas"/>
+        <Caret Line="6" Column="60"/>
+      </Position>
+      <Position>
+        <Filename Value="..\Service\MainService.pas"/>
+        <Caret Line="10" Column="53"/>
+      </Position>
+      <Position>
+        <Filename Value="..\Service\MainService.pas"/>
+        <Caret Line="6" Column="52"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\MVC\MVC.JWT.pas"/>
+        <Line Value="203"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\MVC\MVC.JWT.pas"/>
+        <Line Value="211"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\..\package\brookframework\Source\libsagui.pas"/>
+        <Line Value="1183"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="E:\lazarus\fpcsrc\rtl\inc\dynlib.inc"/>
+        <Line Value="82"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="E:\lazarus\fpcsrc\rtl\inc\dynlib.inc"/>
+        <Line Value="87"/>
+      </Item>
+    </BreakPoints>
+    <Watches>
+      <Item>
+        <Expression Value="HTMLCONTENT"/>
+      </Item>
+      <Item>
+        <Expression Value="db1"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

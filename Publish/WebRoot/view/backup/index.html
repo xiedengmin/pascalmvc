@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>pascalWebMVC</title>
+
+<#include file="/include.html" /> 
+<!--引用了element等类库-->
+</head>
+
+
+<div class="container">
+  <header>
+    <el-row :gutter="10">
+      <el-col :xs="12" :sm="24" >
+        <div>
+          <h1 class="logo"><a href="http://www.bili7.com" title="返回helloweba首页">helloweba</a></h1>
+        </div>
+      </el-col>
+    </el-row>
+  </header>
+  <el-row>
+    <h2 class="top_title"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><a href="/521.html">JWT实战：使用axios+PHP实现登录认证</a></h2>
+    <div id="showpage" style="display: none">
+      <el-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8" >
+        <div class="form-group">
+          <label for="username">用户名</label>
+          <input type="text" class="form-control" id="username" placeholder="请输入用户名">
+        </div>
+      </el-col>
+      <el-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8">
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="password" class="form-control" id="password" placeholder="请输入密码">
+        </div>
+        <button type="submit" id="sub-btn" class="btn btn-default">登录</button>
+        <br/>
+        <p class="bg-warning" style="padding: 10px;">演示用户名和密码都是<code>demo</code>。</p>
+      </el-col>
+    </div>
+    <div id="user" style="display: none">
+      <el-col :xs="12" :sm="24" >
+        <p>欢迎<strong id="uname"></strong>，您已登录，<a href="javascript:;" id="logout">退出&gt;&gt;</a></p>
+      </el-col>
+    </div>
+  </el-row>
+ 
+</div>
+
+
+<div id="app" style="text-align: center;">
+  <el-row>
+    <el-col :span="24">
+      <div class="grid-content bg-purple-dark">很紧，还是建议你用自己最熟悉的语言，学go本身需要花时间的。
+        
+        我最近一个web项目是用Gorilla写的，也是边学边做 Gorilla, the golang web toolkit；这个Go by Example 挺有用。</div>
+    </el-col>
+  </el-row>
+  <el-row :gutter="10">
+    <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+      <div class="grid-content bg-purple">1</div>
+    </el-col>
+    <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11">
+      <div class="grid-content bg-purple-light">2</div>
+    </el-col>
+    <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11">
+      <div class="grid-content bg-purple">3</div>
+    </el-col>
+    <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+      <div class="grid-content bg-purple-light">4</div>
+    </el-col>
+  </el-row>
+  <el-row>
+    <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6" >
+      <div class="grid-content bg-purple">
+        <div style="margin-top: 10px;">
+          <image src="/image/logo.png" ></image>
+        </div>
+      </div>
+    </el-col>
+    <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6" >
+      <div class="grid-content bg-purple-light">
+        <h1>PascalMVC Framework</h1>
+        <h1>欢迎大家使用1</h1>
+        <h1>{#message}</h1>
+        <h2>ElementUI</h2>
+      </div>
+    </el-col>
+  </el-row>
+  <h1>{#name}</h1>
+  <div style="margin-top: 10px;"></div>
+  <el-button @click="save()" icon="el-icon-search">提交</el-button>
+  <el-progress type="circle" :percentage="num"></el-progress>
+  <el-progress type="circle" :percentage="num" status="success"></el-progress>
+  <el-progress type="circle" :percentage="num" status="warning"></el-progress>
+</div>
+<div    style="text-align: center;">
+  <label class="layui-form-label" style="width: 40px;">用户</label>
+  <div class="layui-input-inline">
+    <select id="role" name="role">
+      <option value="0">全部</option>
+      <#list data=users item=i>
+      <option value="{#i.id}">{#i.username}{#i.sex}{#i.realname}</option>
+      </#list>
+    </select>
+  </div>
+  <div class="layui-btn-group" style="text-align: center;">
+    <input type="button" class="layui-btn" id="btnsearch" value="查询" />
+    <input type="button" class="layui-btn" id="btnadd" value="新增" />
+    <input type="button" class="layui-btn" id="btnprint" value="打印" />
+  </div>
+</div>
+<div   style="text-align: center;">
+  <h1>{#copyright}</h1>
+</div>
+<style>
+  .el-row {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .el-col {
+    border-radius: 4px;
+  }
+  .bg-purple-dark {
+    background: #99a9bf;
+  }
+  .bg-purple {
+    background: #d3dce6;
+  }
+  .bg-purple-light {
+    background: #e5e9f2;
+  }
+  .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+  .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+  }
+</style>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+let jwt =  localStorage.getItem('jwt');
+
+if (jwt) {
+    axios.defaults.headers.common['Authorization'] = jwt;
+    axios.get('user.php')
+    .then(function (response) {
+        if (response.data.result === 'success') {
+            document.querySelector('#showpage').style.display = 'none';
+            document.querySelector('#user').style.display = 'block';
+            document.querySelector('#uname').innerHTML = response.data.info.data.username;
+        } else {
+            document.querySelector('#showpage').style.display = 'block';
+            console.log(response.data.msg);
+        }
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+} else {
+    document.querySelector('#showpage').style.display = 'block';
+}
+
+document.querySelector('#sub-btn').onclick = function() {
+    let username = document.querySelector('#username').value;
+    let password = document.querySelector('#password').value;
+   
+    var params = new URLSearchParams();
+    params.append('username', username);
+    params.append('pwd', password);
+
+    axios.post(
+        '/check', 
+        params
+    )
+    .then((response) => {
+        if (response.data.code ===0) {
+            // 本地存储token
+            localStorage.setItem('jwt', response.data.jwt);
+            axios.defaults.headers.common['Authorization'] = response.data.jwt;
+            axios.get('check').then(function(response) {
+                if (response.data.result === 'success') {
+                    document.querySelector('#showpage').style.display = 'none';
+                    document.querySelector('#user').style.display = 'block';
+                    document.querySelector('#uname').innerHTML = response.data.info.data.username;
+                } else {
+                }
+            });
+        } else {
+            console.log(response.data.msg);
+        }
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+}
+
+document.querySelector('#logout').onclick = function() {
+    localStorage.removeItem('jwt');
+    document.querySelector('#showpage').style.display = 'block';
+    document.querySelector('#user').style.display = 'none';
+}
+
+</script> 
+<script>
+new Vue({
+	el:"#app",
+	created(){
+		document.title=this.title
+	},
+	data:{
+         	
+            title:"PascalMVC",
+	},
+	methods:{
+	
+                               save:function(){
+			this.$http.get("getdata").then(function(ret){
+				this.$message({message:ret.body.msg});
+			});
+			
+		}
+	}
+})
+</script>
+</html>

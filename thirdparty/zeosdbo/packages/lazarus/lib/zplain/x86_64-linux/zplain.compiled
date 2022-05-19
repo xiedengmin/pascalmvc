@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MDelphi -Scgi -Cg -O1 -g -gl -l -vewnhibq -Fu/root/a/source/delphisource/package/zeosdbo/src/plain -Fu/usr/share/lazarus/2.2.0/packager/units/x86_64-linux -Fu/root/a/source/delphisource/package/zeosdbo/packages/lazarus/lib/zcore/x86_64-linux -Fu/root/a/source/delphisource/package/zeosdbo/packages/lazarus/ -FU/root/a/source/delphisource/package/zeosdbo/packages/lazarus/lib/zplain/x86_64-linux/ zplain.pas"/>
+</CONFIG>

@@ -1,0 +1,394 @@
+ [2022-05-07 15:17:33.737 Debug] Have #0 params
+ [2022-05-07 15:17:33.737 Debug] Command : *1
+$4
+PING
+
+ [2022-05-07 15:17:33.737 Debug] No parameters
+ [2022-05-07 15:17:33.737 Debug] Full command : [*1
+$4
+PING
+]
+ [2022-05-07 15:17:33.737 Debug] Going to send the following command: [*1
+$4
+PING
+]
+ [2022-05-07 15:17:33.738 Debug] Answer from the command : [+PONG
+]
+ [2022-05-07 15:17:33.738 Debug] Have #1 params
+ [2022-05-07 15:17:33.738 Debug] Command : *2
+$4
+AUTH
+
+ [2022-05-07 15:17:33.738 Debug] On index 0, with type 11
+ [2022-05-07 15:17:33.738 Debug] Have value of [foobare], length : 7
+ [2022-05-07 15:17:33.738 Debug] Have parametes: $7
+foobare
+
+ [2022-05-07 15:17:33.738 Debug] Full command : [*2
+$4
+AUTH
+$7
+foobare
+]
+ [2022-05-07 15:17:33.739 Debug] Going to send the following command: [*2
+$4
+AUTH
+$7
+foobare
+]
+ [2022-05-07 15:17:33.739 Debug] Answer from the command : [-ERR Client sent AUTH, but no password is set
+]
+ [2022-05-07 15:17:33.739 Debug] Have #1 params
+ [2022-05-07 15:17:33.739 Debug] Command : *2
+$6
+SELECT
+
+ [2022-05-07 15:17:33.739 Debug] On index 0, with type 0
+ [2022-05-07 15:17:33.739 Debug] Have value of [1], length : 1
+ [2022-05-07 15:17:33.739 Debug] Have parametes: $1
+1
+
+ [2022-05-07 15:17:33.739 Debug] Full command : [*2
+$6
+SELECT
+$1
+1
+]
+ [2022-05-07 15:17:33.739 Debug] Going to send the following command: [*2
+$6
+SELECT
+$1
+1
+]
+ [2022-05-07 15:17:33.740 Debug] Answer from the command : [+OK
+]
+ [2022-05-07 15:17:33.740 Debug] Have #1 params
+ [2022-05-07 15:17:33.740 Debug] Command : *2
+$4
+ECHO
+
+ [2022-05-07 15:17:33.740 Debug] On index 0, with type 11
+ [2022-05-07 15:17:33.740 Debug] Have value of [Hello World], length : 11
+ [2022-05-07 15:17:33.740 Debug] Have parametes: $11
+Hello World
+
+ [2022-05-07 15:17:33.740 Debug] Full command : [*2
+$4
+ECHO
+$11
+Hello World
+]
+ [2022-05-07 15:17:33.740 Debug] Going to send the following command: [*2
+$4
+ECHO
+$11
+Hello World
+]
+ [2022-05-07 15:17:33.740 Debug] Answer from the command : [$11
+Hello World
+]
+ [2022-05-07 15:17:33.740 Debug] Have #1 params
+ [2022-05-07 15:17:33.740 Debug] Command : *2
+$4
+ECHO
+
+ [2022-05-07 15:17:33.740 Debug] On index 0, with type 11
+ [2022-05-07 15:17:33.740 Debug] Have value of ["Hello"W"orld], length : 13
+ [2022-05-07 15:17:33.740 Debug] Have parametes: $13
+"Hello"W"orld
+
+ [2022-05-07 15:17:33.740 Debug] Full command : [*2
+$4
+ECHO
+$13
+"Hello"W"orld
+]
+ [2022-05-07 15:17:33.740 Debug] Going to send the following command: [*2
+$4
+ECHO
+$13
+"Hello"W"orld
+]
+ [2022-05-07 15:17:33.741 Debug] Answer from the command : [$13
+"Hello"W"orld
+]
+ [2022-05-07 15:17:33.741 Debug] Have #0 params
+ [2022-05-07 15:17:33.741 Debug] Command : *1
+$4
+QUIT
+
+ [2022-05-07 15:17:33.741 Debug] No parameters
+ [2022-05-07 15:17:33.741 Debug] Full command : [*1
+$4
+QUIT
+]
+ [2022-05-07 15:17:33.741 Debug] Going to send the following command: [*1
+$4
+QUIT
+]
+ [2022-05-07 15:17:33.741 Debug] Answer from the command : [+OK
+]
+ [2022-05-07 15:17:33.750 Debug] Have #2 params
+ [2022-05-07 15:17:33.750 Debug] Command : *3
+$6
+CONFIG
+
+ [2022-05-07 15:17:33.750 Debug] On index 0, with type 11
+ [2022-05-07 15:17:33.750 Debug] Have value of [get], length : 3
+ [2022-05-07 15:17:33.750 Debug] On index 1, with type 11
+ [2022-05-07 15:17:33.750 Debug] Have value of [*max-*-entries*], length : 15
+ [2022-05-07 15:17:33.750 Debug] Have parametes: $3
+get
+$15
+*max-*-entries*
+
+ [2022-05-07 15:17:33.750 Debug] Full command : [*3
+$6
+CONFIG
+$3
+get
+$15
+*max-*-entries*
+]
+ [2022-05-07 15:17:33.750 Debug] Going to send the following command: [*3
+$6
+CONFIG
+$3
+get
+$15
+*max-*-entries*
+]
+ [2022-05-07 15:17:33.751 Debug] Answer from the command : [*6
+$24
+hash-max-ziplist-entries
+$3
+512
+$22
+set-max-intset-entries
+$3
+512
+$24
+zset-max-ziplist-entries
+$3
+128
+]
+ [2022-05-07 15:17:33.754 Debug] Have #0 params
+ [2022-05-07 15:17:33.754 Debug] Command : *1
+$6
+DBSIZE
+
+ [2022-05-07 15:17:33.754 Debug] No parameters
+ [2022-05-07 15:17:33.754 Debug] Full command : [*1
+$6
+DBSIZE
+]
+ [2022-05-07 15:17:33.754 Debug] Going to send the following command: [*1
+$6
+DBSIZE
+]
+ [2022-05-07 15:17:33.754 Debug] Answer from the command : [:90
+]
+ [2022-05-07 15:17:33.754 Debug] Have #2 params
+ [2022-05-07 15:17:33.754 Debug] Command : *3
+$5
+DEBUG
+
+ [2022-05-07 15:17:33.754 Debug] On index 0, with type 11
+ [2022-05-07 15:17:33.754 Debug] Have value of [OBJECT], length : 6
+ [2022-05-07 15:17:33.754 Debug] On index 1, with type 11
+ [2022-05-07 15:17:33.754 Debug] Have value of [debug], length : 5
+ [2022-05-07 15:17:33.754 Debug] Have parametes: $6
+OBJECT
+$5
+debug
+
+ [2022-05-07 15:17:33.754 Debug] Full command : [*3
+$5
+DEBUG
+$6
+OBJECT
+$5
+debug
+]
+ [2022-05-07 15:17:33.754 Debug] Going to send the following command: [*3
+$5
+DEBUG
+$6
+OBJECT
+$5
+debug
+]
+ [2022-05-07 15:17:33.754 Debug] Answer from the command : [-ERR no such key
+]
+ [2022-05-07 15:17:33.754 Debug] Have #0 params
+ [2022-05-07 15:17:33.754 Debug] Command : *1
+$4
+INFO
+
+ [2022-05-07 15:17:33.754 Debug] No parameters
+ [2022-05-07 15:17:33.754 Debug] Full command : [*1
+$4
+INFO
+]
+ [2022-05-07 15:17:33.754 Debug] Going to send the following command: [*1
+$4
+INFO
+]
+ [2022-05-07 15:17:33.754 Debug] Answer from the command : [$2141
+# Server
+redis_version:3.2.100
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:dd26f1f93c5130ee
+redis_mode:standalone
+os:Windows  
+arch_bits:64
+multiplexing_api:WinSock_IOCP
+process_id:4520
+run_id:fc6774891de302700dbdec15383ba0dd1d1980db
+tcp_port:6379
+uptime_in_seconds:105
+uptime_in_days:0
+hz:10
+lru_clock:7740685
+executable:E:\source\Redis\redis-server.exe
+config_file:E:\source\Redis\redis.windows.conf
+
+# Clients
+connected_clients:1
+client_longest_output_list:0
+client_biggest_input_buf:0
+blocked_clients:0
+
+# Memory
+used_memory:750600
+used_memory_human:733.01K
+used_memory_rss:691952
+used_memory_rss_human:675.73K
+used_memory_peak:750600
+used_memory_peak_human:733.01K
+total_system_memory:0
+total_system_memory_human:0B
+used_memory_lua:37888
+used_memory_lua_human:37.00K
+maxmemory:0
+maxmemory_human:0B
+maxmemory_policy:noeviction
+mem_fragmentation_ratio:0.92
+mem_allocator:jemalloc-3.6.0
+
+# Persistence
+loading:0
+rdb_changes_since_last_save:0
+rdb_bgsave_in_progress:0
+rdb_last_save_time:1651907748
+rdb_last_bgsave_status:ok
+rdb_last_bgsave_time_sec:-1
+rdb_current_bgsave_time_sec:-1
+aof_enabled:0
+aof_rewrite_in_progress:0
+aof_rewrite_scheduled:0
+aof_last_rewrite_time_sec:-1
+aof_current_rewrite_time_sec:-1
+aof_last_bgrewrite_status:ok
+aof_last_write_status:ok
+
+# Stats
+total_connections_received:2
+total_commands_processed:8
+instantaneous_ops_per_sec:0
+total_net_input_bytes:259
+total_net_output_bytes:247
+instantaneous_input_kbps:0.00
+instantaneous_output_kbps:0.00
+rejected_connections:0
+sync_full:0
+sync_partial_ok:0
+sync_partial_err:0
+expired_keys:0
+evicted_keys:0
+keyspace_hits:0
+keyspace_misses:0
+pubsub_channels:0
+pubsub_patterns:0
+latest_fork_usec:0
+migrate_cached_sockets:0
+
+# Replication
+role:master
+connected_slaves:0
+master_repl_offset:0
+repl_backlog_active:0
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:0
+repl_backlog_histlen:0
+
+# CPU
+used_cpu_sys:0.08
+used_cpu_user:0.09
+used_cpu_sys_children:0.00
+used_cpu_user_children:0.00
+
+# Cluster
+cluster_enabled:0
+
+# Keyspace
+db0:keys=90,expires=0,avg_ttl=0
+
+]
+ [2022-05-07 15:17:33.757 Debug] Have #0 params
+ [2022-05-07 15:17:33.757 Debug] Command : *1
+$8
+LASTSAVE
+
+ [2022-05-07 15:17:33.757 Debug] No parameters
+ [2022-05-07 15:17:33.757 Debug] Full command : [*1
+$8
+LASTSAVE
+]
+ [2022-05-07 15:17:33.757 Debug] Going to send the following command: [*1
+$8
+LASTSAVE
+]
+ [2022-05-07 15:17:33.757 Debug] Answer from the command : [:1651907748
+]
+ [2022-05-07 15:17:33.757 Debug] Have #1 params
+ [2022-05-07 15:17:33.757 Debug] Command : *2
+$7
+SLOWLOG
+
+ [2022-05-07 15:17:33.757 Debug] On index 0, with type 11
+ [2022-05-07 15:17:33.757 Debug] Have value of [GET], length : 3
+ [2022-05-07 15:17:33.757 Debug] Have parametes: $3
+GET
+
+ [2022-05-07 15:17:33.757 Debug] Full command : [*2
+$7
+SLOWLOG
+$3
+GET
+]
+ [2022-05-07 15:17:33.757 Debug] Going to send the following command: [*2
+$7
+SLOWLOG
+$3
+GET
+]
+ [2022-05-07 15:17:33.757 Debug] Answer from the command : [*0
+]
+ [2022-05-07 15:17:33.757 Debug] Have #0 params
+ [2022-05-07 15:17:33.757 Debug] Command : *1
+$4
+SYNC
+
+ [2022-05-07 15:17:33.757 Debug] No parameters
+ [2022-05-07 15:17:33.757 Debug] Full command : [*1
+$4
+SYNC
+]
+ [2022-05-07 15:17:33.757 Debug] Going to send the following command: [*1
+$4
+SYNC
+]
+ [2022-05-07 15:17:33.884 Debug] Answer from the command : [$31035
+]

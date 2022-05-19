@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="D:\lazarus\fpc\3.2.2\bin\i386-win32\fpc.exe" Date="1411536590"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -l -vewnhibq -FiD:\my\LazarusMVC\Project\lib\i386-win32 -FuD:\my\LazarusMVC\MVC -FuD:\my\LazarusMVC\Controller -FuD:\my\LazarusMVC\Controller\Base -FuD:\my\LazarusMVC\Project\ -FUD:\my\LazarusMVC\Project\lib\i386-win32\ -FED:\my\LazarusMVC\Publish\ -oD:\my\LazarusMVC\Publish\MVCDemo.exe MVCDemo.lpr"/>
+</CONFIG>

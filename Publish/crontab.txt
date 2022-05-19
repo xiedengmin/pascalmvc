@@ -1,0 +1,2 @@
+# 每分钟访问首页避免mysql丢连接
+*/1 * * * * curl http://localhost:8008/
